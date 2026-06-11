@@ -1,0 +1,8 @@
+.booking_quote_outer_main_panel {
+    border: 1px solid #d7d7d7;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-top: -4px;
+}

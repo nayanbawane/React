@@ -1,0 +1,210 @@
+/* ============================= */
+/* Container & Scroll */
+/* ============================= */
+
+.document-details {
+  width: 100%;
+}
+
+.document-details__scroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.document-details__body {
+  min-width: 1400px;
+  /* keeps layout intact */
+  padding: 0.5rem;
+}
+
+/* ============================= */
+/* Row Layout (GRID - FINAL) */
+/* ============================= */
+
+.document-details__row {
+  display: grid;
+
+  grid-template-columns:
+    70px
+    /* icons */
+    180px
+    /* type */
+    140px
+    /* reference */
+    140px
+    /* required date */
+    70px
+    /* time */
+    140px
+    /* received date */
+    70px
+    /* time */
+    140px
+    /* expiration */
+    220px
+    /* customs */
+    120px
+    /* channel */
+    140px
+    /* comments */
+    80px
+    /* active */
+    80px;
+  /* actions */
+
+  grid-template-columns:
+    1fr
+    /* 1 */
+    2fr
+    /* 2 (bigger column) */
+    1fr
+    /* 3 */
+    2fr 1fr 1fr 1fr 1fr 2fr 1fr 1fr 1fr 1fr 1fr 0.1fr 1fr;
+  gap: 6px;
+  align-items: end;
+  margin-bottom: 6px;
+}
+
+/* ============================= */
+/* Icons */
+/* ============================= */
+
+.document-details__icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 2px;
+}
+
+.document-details__icons--first {
+  padding-top: 2px;
+}
+
+.document-details__icons--green-icon {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+/* ============================= */
+/* Actions */
+/* ============================= */
+
+.document-details__actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 5px;
+}
+
+.document-details__actions--first {
+  margin-top: 16px;
+}
+
+/* ============================= */
+/* Icon Buttons */
+/* ============================= */
+
+.document-details__icon-button.MuiIconButton-root {
+  width: 20px;
+  height: 20px;
+  border-radius: 0 !important;
+  padding: 0 !important;
+
+  background-color: #f3f4f6;
+  border: 1px solid #cfd4dc;
+  color: #5199d6;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  transition: transform 0.05s ease-in-out;
+}
+
+.document-details__icon-button.MuiIconButton-root:hover {
+  background-color: #f3f4f6;
+}
+
+.document-details__icon-button.MuiIconButton-root:active {
+  transform: translateY(1px);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================= */
+/* Inputs */
+/* ============================= */
+
+.document-details__row .MuiInputBase-root {
+  height: 26px;
+  background-color: white !important;
+  border-radius: 1px !important;
+  font-size: 12px !important;
+
+  box-shadow:
+    inset 1px 1px 3px rgba(0, 0, 0, 0.3),
+    inset -1px -1px 1px rgba(255, 255, 255, 0.7);
+
+  width: 100% !important;
+}
+
+.document-details__row .MuiOutlinedInput-input {
+  padding: 0 4px;
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 11px;
+}
+
+.document-details__row .MuiSelect-select {
+  padding: 0 20px 0 4px !important;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 11px;
+}
+
+/* ============================= */
+/* Labels */
+/* ============================= */
+
+.document-details__row .MuiInputLabel-root {
+  font-size: 11px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.1;
+}
+
+/* ============================= */
+/* Optional Custom Label (Dates) */
+/* ============================= */
+
+.label {
+  font-size: 11px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 2px;
+  white-space: nowrap;
+}
+
+.document-details__icon {
+  border-radius: 2px !important;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px !important;
+  background-color: #348bc6 !important;
+}
+
+/* .document-details__icon svg{
+  width: 12px;
+  height: 10px;
+} */
+
+.documentDetailRow td {
+  padding-left: 5px;
+}

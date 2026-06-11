@@ -1,0 +1,90 @@
+// ─── Documents & Transshipment ───────────────────────────────────────────────
+
+import type { YesNo } from "../common.types";
+
+export interface UploadDocumentBean {
+  genericReference: string;
+  documentId: number;
+  referenceNumber: string;
+  referenceObject: string;
+  documentFileId?: string;
+  documentType: string;
+  documentTypeName: string;
+  documentTypeId: number;
+  documentFileName?: string;
+  documentReferenceNumber: string;
+  documentRequiredDate: string;
+  documentRequiredTime: string;
+  documentReceivedDate: string;
+  documentReceivedTime: string;
+  documentExpirationDate: string;
+  documentCustomsOffice: string;
+  channel: string;
+  documentCarrier: string;
+  documentShipper: string;
+  documentMode?: string;
+  recordOrder: number;
+  status: number;
+  schemaId?: string;
+  officeId?: string;
+  inputUser?: string;
+  inputDate?: string;
+  updateUser?: string;
+  updateDate?: string;
+  inputLdapUser?: string;
+  updateLdapUser?: string;
+  filePath?: string;
+  contentType?: string;
+  genFileBeans?: any;
+  isReadyForUpload: boolean;
+  isOfficeMandatoryDocument: boolean;
+  transactionalFlag: string;
+  agent: string;
+  comments: string;
+  documentTypeHardcopyOnly?: string;
+  documentReceivedStatus?: string;
+  inputUserFullName?: string;
+  oldRecordOrder?: number;
+  isHardcopyPending: boolean;
+  fileUploaded: boolean;
+  imageSource?: string;
+  active: string;
+  documentCreationFromFileBean?: any;
+  selectedPages?: any;
+  eserviceUploadFlag?: string;
+  eserviceUploadApproval?: string;
+  oldDocumentReferenceNumber?: string;
+  oldDocumentType?: string;
+  requiredByDate?: string;
+  requiredByTime?: string;
+  isActive?: boolean;
+  iEmailSentCount: number;
+  moduleName?: string;
+  documentHistoryId?: string;
+  pickupId?: string;
+  warehouseName?: string;
+  documentChannel?: string;
+  eServiceUploadFlag?: string;
+  commonBean?: any;
+  fileUploadKey?: string;
+  uploadedFrom?: string;
+  isSystemAddedDocument: boolean;
+  isFromSplitDocument: boolean;
+  isUploadFromEservice: boolean;
+  uploadThroughAPI?: boolean;
+  uploadFromBkgApi?: boolean;
+  isMandatory: boolean;
+  isCustomRefchanged: boolean;
+  uploadDocumentsType?: string;
+  transactionFlagStatus?: string;
+  pngDocument?: boolean;
+  updateDocument?: boolean;
+  hardcopyOnly?: boolean;
+  documentReceived?: boolean;
+}
+
+export interface TransshipmentRoutingBean {
+  referenceNumber: string;
+  moduleCode: string;
+  transshipmentPortSeq: number;
+}

@@ -1,0 +1,240 @@
+.formRoot {
+  width: 100%;
+  font-size: 12px;
+  background-color: #e9f6fe;
+  min-height: 100%;
+}
+
+.formTitle {
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+  padding: 6px 8px 4px 8px;
+  background-color: #def2fe;
+  border-bottom: 1px solid #a8c8dc;
+}
+
+.section {
+  display: flex;
+  align-items: stretch;
+  border-top: 1px solid #a8c8dc;
+  border-bottom: 1px solid #a8c8dc;
+  margin-bottom: -1px;
+}
+
+.section:first-child{
+  margin-top: 5px;
+}
+
+.sectionLabel {
+  width: 117px;
+  min-height: 70px;
+  background-color: #def2fe;
+  color: #333;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: top;
+  padding-left: 10px;
+  border-right: 1px solid #a8c8dc;
+  flex-shrink: 0;
+  padding-top: 10px;
+}
+
+.sectionContent {
+  flex: 1;
+  padding: 8px 12px;
+  background-color: #e9f6fe;
+}
+
+.fieldGrid {
+  display: flex;
+  gap: 16px;
+}
+
+.fieldCol {
+  width: 215px;
+  flex-shrink: 0;
+}
+
+.fieldLabel {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.fieldLabelForSailing {
+  font-size: 14px;
+  font-weight: normal;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.buttonRow {
+  display: flex;
+  gap: 8px;
+  padding: 10px 12px 10px 133px;
+}
+
+.goBtn {
+  min-width: 56px !important;
+}
+
+.clearBtn {
+  min-width: 76px !important;
+}
+
+.resultsRoot {
+  width: 100%;
+  font-size: 12px;
+  background-color: #e9f6fe;
+  min-height: 100%;
+}
+
+.resultsNavRow {
+  display: flex;
+  justify-content: flex-end;
+  padding: 4px 8px 2px 8px;
+}
+
+.resultsTopBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 8px 6px 8px;
+  border-bottom: 1px solid #e9f6fe;
+}
+
+.resultsTitle {
+  font-weight: bold;
+  font-size: 12px;
+  color: #333;
+}
+
+.resultLink {
+  color: #2980b9;
+  cursor: pointer;
+  font-size: 13px;
+  text-decoration: underline;
+  margin-bottom: 8px;
+}
+
+.resultLink:hover {
+  color: #1a5276;
+}
+
+.noResults {
+  padding: 20px;
+  text-align: center;
+  color: #666;
+  font-size: 12px;
+}
+
+.group {
+  margin-bottom: 4px;
+}
+
+.groupHeader {
+  background-color: #0080c0;
+  color: #ffffff;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 4px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.collapseBtn {
+  cursor: pointer;
+  font-size: 23px;
+  line-height: 1;
+  padding: 0px 0px 0px 7px;
+  border-left: 1px solid gray;
+  user-select: none;
+  min-width: 18px;
+  text-align: center;
+  font-weight: bold;
+  color: #006b96;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-left: 1px solid #e0e0e0;
+  font-size: 12px;
+  table-layout: fixed;
+}
+
+.th {
+  background: linear-gradient(to bottom, #ffffff 22%, #e6e6e6 100%);
+  color: #333;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 0 5px 0 10px;
+  height: 28px;
+  text-align: left;
+  border-right: 1px solid #c1c1c1;
+  border-top: 1px solid #d1d1d1;
+  border-bottom: 1px solid #d1d1d1;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.tr:nth-child(odd) {
+  background-color: #e7e7e7;
+}
+
+.tr:nth-child(even) {
+  background-color: #fbfbfb;
+}
+
+
+.td {
+  padding: 2px 5px;
+  border-bottom: 1px solid #e0e0e0;
+  border-right: 1px solid #e0e0e0;
+  color: #333;
+  vertical-align: center;
+  overflow: hidden;
+  word-break: break-word;
+}
+
+.bookThisLink {
+  color: #333;
+  cursor: pointer;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.bookThisLink:hover {
+  cursor: pointer;
+}
+
+.loadingRow {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 8px 12px;
+  background-color: #f0f0e8;
+}
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #c8dce8;
+  border-top-color: #0080c0;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

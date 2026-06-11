@@ -1,0 +1,120 @@
+.modalPaper {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.header {
+  background: linear-gradient(to bottom, #1f88b5, #0d6f98);
+  color: white;
+  font-weight: 600;
+  padding: 10px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+}
+
+.closeBtn {
+  background: #0b5f83;
+  border: none;
+  color: white;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.closeBtn:hover {
+  background: #084b68;
+}
+
+.body {
+  background: #f2f2f2;
+  padding: 15px;
+}
+
+.formRow {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+
+.field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.field label {
+  font-size: 13px;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+.field input,
+.field select {
+  height: 32px;
+  width: 100%;
+  padding: 4px 6px;
+  border: 1px solid #999;
+  border-radius: 3px;
+  font-size: 13px;
+  box-sizing: border-box;
+  background: white;
+}
+
+.field :global(.MuiOutlinedInput-input) {
+  padding: 0 4px;
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 11px;
+}
+
+.field :global(.MuiSelect-select) {
+  padding: 0 20px 0 4px !important;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 11px;
+}
+
+.field :global(.MuiInputBase-root) {
+  height: 26px;
+  background-color: white !important;
+  border-radius: 1px !important;
+  font-size: 12px !important;
+
+  box-shadow:
+    inset 1px 1px 3px rgba(0, 0, 0, 0.3),
+    inset -1px -1px 1px rgba(255, 255, 255, 0.7);
+
+  width: 100% !important;
+  
+}
+
+.field :global(.MuiInputBase-input) {
+  padding: 6px 8px !important;
+}
+
+.field :global(.MuiOutlinedInput-notchedOutline) {
+  border-color: #999 !important;
+}
+
+.footer {
+  margin-top: 15px;
+}
+
+.uploadBtn {
+  background: linear-gradient(to bottom, #6ab0d6, #3e8ec0);
+  border: 1px solid #2d6d94;
+  color: white;
+  padding: 6px 18px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.uploadBtn:hover {
+  background: linear-gradient(to bottom, #5aa3cc, #2f7cab);
+}

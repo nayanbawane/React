@@ -1,0 +1,207 @@
+.container {
+  width: 100%;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+}
+
+.card {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+
+.content {
+  padding: 8px 10px 10px 10px;
+}
+
+/* Responsive main grid — 1 col base, scales up to 5 at lg */
+.mainGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* Removed grid-auto-flow: column to restore proper L-to-R wrapping flow */
+  gap: 8px 11px;
+}
+
+@media (min-width: 600px) {
+  .mainGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 960px) {
+  .mainGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .mainGrid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.dateFieldRow {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+
+.dateReadOnly {
+  flex: 1;
+  border: 1px solid #a00000;
+  padding: 1px 6px;
+  background: white;
+  font-size: 11px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.datePickerWrapper {
+  flex: 1;
+  min-width: 0;
+}
+
+.dateEditBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  line-height: 0;
+  height: 22px;
+  width: 22px;
+}
+
+.requiredAsterisk {
+  color: #cc0000;
+}
+
+.toggleRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center !important;
+}
+
+.moreDetailsToggleWrapper {
+  margin-top: 8px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 8px;
+  
+}
+
+.moreDetailsToggleBtn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px 4px 0;
+  width: fit-content;
+  
+}
+
+.arrowIcon {
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 6px solid #0095d4;
+  transition: transform 0.2s;
+  transform: rotate(0deg);
+  flex-shrink: 0;
+  
+}
+
+.arrowIconOpen {
+  transform: rotate(90deg);
+}
+
+.moreTitle {
+  font-size: 11px;
+  color: #0072bb;
+  font-weight: 500;
+}
+
+/* More section grid — scales same as mainGrid but up to 6 cols */
+.moreGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px 11px;
+}
+
+@media (min-width: 600px) {
+  .moreGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 960px) {
+  .moreGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .moreGrid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+/* Label used beside date fields */
+.fieldLabel {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 2px;
+  color: #333;
+  white-space: nowrap;
+}
+
+.clausesField {
+  grid-column: span 2;
+}
+
+/* Conditional: truck quote + quote type row */
+.truckQuoteRow {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.truckQuoteTypeField {
+  flex: 1;
+  min-width: 0;
+}
+/* PHX-125266 Nilam 16-04-2026*/
+.clausesBox {
+  grid-column: span 2;
+}
+.fclmainGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  /* Removed grid-auto-flow: column to restore proper L-to-R wrapping flow */
+  gap: 8px 10px;
+}
+/* PHX-125266 Nilam 16-04-2026*/
+/*PHX-12526623-04-2026*/
+.arrowWrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px; 
+}
+
+.moreDetailsToggleBtn:focus-visible .arrowWrapper {
+  border: 2px solid black;
+  border-radius: 4px;
+}
+/* PHX-125266 Nilam 16-04-2026*/
+/*PHX-125266 23-04-2026*/

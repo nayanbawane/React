@@ -1,0 +1,121 @@
+.container {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  overflow: visible;
+}
+
+
+.stepsWrapper {
+  position: relative;
+  margin: 150px 0 250px 100px;
+  z-index: 0;
+}
+
+.stepsInner {
+  display: flex;
+  position: relative;
+  height: 60px;
+  z-index: 0;
+}
+
+.stepItem {
+  flex: 1 1 auto;
+  position: relative;
+}
+
+.icon {
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  left: -12px;
+  top: 44px;
+  z-index: 9;
+  display: block;
+}
+
+.stepInner {
+  position: relative;
+  text-align: left;
+  line-height: 14px;
+  padding: 0;
+  z-index: 9;
+}
+
+.stepInner::before,
+.stepInner::after {
+  position: absolute;
+  content: '';
+  width: 50%;
+  height: 2px;
+  background: #7f7f7f;
+  top: 51px;
+}
+
+.stepInner::before {
+  left: 0;
+}
+
+.stepInner::after {
+  left: 50%;
+}
+
+.stepItemLast .stepInner::before,
+.stepItemLast .stepInner::after {
+  display: none;
+}
+
+.labelAbove {
+  width: 140px;
+  transform: rotate(-69deg);
+  position: absolute;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  line-height: 14px;
+  white-space: pre-line;
+  text-align: left;
+  z-index: 9;
+  pointer-events: none;
+}
+
+.labelBelow {
+  width: 140px;
+  transform: rotate(-69deg);
+  position: absolute;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  line-height: 14px;
+  white-space: pre-line;
+  text-align: right;
+  z-index: 9;
+  pointer-events: none;
+}
+
+.labelAboveOne {
+  top: -40px;
+  left: -42px;
+}
+
+.labelAboveThree {
+  top: -47px;
+  left: -46px;
+}
+
+.labelBelowOne {
+  bottom: -145px;
+  left: -105px;
+  top: auto;
+}
+
+.labelBelowThree {
+  bottom: -152px;
+  left: -103px;
+  top: auto;
+}
+
+.labelActive {
+  color: #0071a4;
+  font-weight: 600;
+}

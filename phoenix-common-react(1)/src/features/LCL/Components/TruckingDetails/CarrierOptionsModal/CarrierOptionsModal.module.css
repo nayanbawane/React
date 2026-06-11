@@ -1,0 +1,515 @@
+.root {
+  --co-primary: #0095d4;
+  --co-header-tint: #efefef;
+  --co-content-tint: #e9f6fe;
+  --co-label-bg: #def2fe;
+  --co-border: #bae1f3;
+  --co-zip-err: #f44336;
+  --co-muted: #666666;
+  --co-inactive-bg: #f5f5f5;
+  --co-inactive-text: #333333;
+  --co-table-row-border: #eeeeee;
+}
+
+.locationSuggestion thead {
+  display: none;
+}
+
+.locationSuggestion table {
+  min-width: 480px;
+}
+
+.actionButtonsRow {
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+  padding: 6px 4px 8px 4px;
+}
+
+.accordionBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--co-primary);
+  color: #ffffff;
+  padding: 4px 10px;
+  cursor: pointer;
+  border-radius: 4px 4px 0 0;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  user-select: none;
+}
+
+.accordionBarTitle {
+  flex: 1;
+}
+
+.accordionToggle {
+  display: flex;
+  align-items: center;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+
+.accordionContent {
+  width: 100%;
+  padding: 0px 10px 10px;
+  background-color: #ffffff;
+  border: 1px solid #d7d7d7;
+  border-top: 0 none;
+  overflow: hidden !important;
+}
+
+.accordionContentHidden {
+  display: none;
+}
+
+.mainDetailsAccordion {
+  margin-bottom: 8px;
+}
+
+.accordionBarClosed {
+  background-color: var(--co-header-tint);
+  color: #333333;
+  border-radius: 4px;
+}
+
+.pricingSection {
+  margin-top: 6px;
+}
+
+.pricingAccordionContent {
+  padding: 0;
+  background-color: #ffffff;
+  border: 1px solid var(--co-border);
+  border-top: none;
+}
+
+.mainDetailsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 220px;
+  gap: 14px;
+  align-items: start;
+}
+
+.detailsColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.subLabel {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #222222;
+}
+
+.fieldRow {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.fieldRowFlex {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.fieldRowWide {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.inlineFieldsRow {
+  display: flex;
+  gap: 6px;
+}
+
+.fieldLabel {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  color: #444444;
+}
+
+.accessorialsLabel {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  color: #444444;
+  font-weight: bold;
+  margin-top: 4px;
+}
+
+.accessorialsGrid {
+  width: 80%;
+  white-space: nowrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+}
+
+.gatewayColumn {
+  padding-top: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 200px;
+}
+
+.gatewayRow {
+  display: flex;
+  gap: 8px;
+  align-items: flex-end;
+}
+
+.pricingHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--co-primary);
+  color: #ffffff;
+  padding: 5px 10px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 4px 4px 0 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.pricingHeaderClosed {
+  background-color: var(--co-header-tint);
+  color: #333333;
+  border-radius: 4px;
+}
+
+.guaranteedOnlyRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 6px;
+  border-bottom: 1px solid var(--co-border);
+  background-color: #ffffff;
+}
+
+.guaranteedLeftArea {
+  display: flex;
+  align-items: center;
+  min-height: 20px;
+}
+
+.guaranteedBtn {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  border: 1px solid #cccccc;
+  background-color: var(--co-inactive-bg);
+  color: var(--co-inactive-text);
+  padding: 2px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.guaranteedBtnActive {
+  background-color: #dbf4ce;
+  color: #333;
+  font-weight: bold;
+  border-color: #dbf4ce;
+}
+
+.pricingTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+}
+
+.th {
+  background-color: var(--co-header-tint);
+  border: 1px solid #dddddd;
+  padding: 5px 6px;
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.thCarrier {
+  width: 11%;
+}
+
+.thTransit {
+  width: 15%;
+}
+
+.thIcons {
+  width: 4%;
+}
+
+.thLiab {
+  width: 15%;
+}
+
+.thRate {
+  width: 10%;
+}
+
+.thFsc {
+  width: 9%;
+}
+
+.thAccess {
+  width: 13%;
+}
+
+.thTotal {
+  width: 12%;
+}
+
+.thSelect {
+  width: 8%;
+}
+
+.td {
+  border: 1px solid var(--co-table-row-border);
+  padding: 5px 6px;
+  vertical-align: middle;
+  text-align: right;
+}
+
+.tdLeft {
+  border: 1px solid var(--co-table-row-border);
+  padding: 5px 6px;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.carrierCell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  min-width: 100px;
+}
+
+.carrierImg {
+  width: 110px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.carrierLogoPh {
+  width: 64px;
+  height: 42px;
+  background-color: var(--co-header-tint);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dddddd;
+  border-radius: 2px;
+}
+
+.carrierLogoText {
+  font-size: 9px;
+  color: var(--co-muted);
+  text-align: center;
+}
+
+.carrierName {
+  font-size: 11px;
+  text-align: center;
+  color: #222222;
+}
+
+.transitCell {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  font-size: 12px;
+}
+
+.guaranteedLine {
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+  color: var(--co-muted);
+}
+
+.iconCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+
+.iconImg {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+  display: block;
+}
+
+.flashImg {
+  width: 12px;
+  height: 12px;
+  object-fit: contain;
+  margin-right: 3px;
+  vertical-align: middle;
+}
+
+.liabilityStack {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  width: fit-content;
+}
+
+.liabilityRow {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.liabilityLabel {
+  color: var(--co-muted);
+  min-width: 85px;
+  text-align: left;
+}
+
+.liabilityNewValue {
+  display: inline-block;
+  min-width: 48px;
+  text-align: right;
+  border-bottom: 1px solid #d7d7d7;
+  line-height: 1.1;
+}
+
+.liabilityUsedValue {
+  display: inline-block;
+  min-width: 48px;
+  text-align: right;
+}
+
+.accessorialsCell {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  justify-content: right;
+}
+
+.infoBtn {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.infoImg {
+  background-repeat: no-repeat;
+  background-position: -120px -80px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: -2px;
+}
+
+.total {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.notesTd {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-size: 12px;
+  color: #000;
+  padding: 4px 4px;
+  background-color: #fafafa;
+  text-align: left;
+  border: 1px solid var(--co-table-row-border);
+}
+
+.noRates {
+  text-align: center;
+  padding: 16px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  color: var(--co-muted);
+}
+
+.tooltipWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltipPopup {
+  position: absolute;
+
+  top: -10px;
+  left: 24px;
+
+  min-width: 180px;
+
+  background: #f5f5f5;
+  border: 1px solid #cfcfcf;
+  border-radius: 4px;
+
+  padding: 10px;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+  z-index: 99999;
+
+  text-align: left;
+}
+
+.tooltipRow {
+  margin-bottom: 8px;
+  color: #222;
+  font-size: 14px;
+}
+
+.tooltipRow:last-child {
+  margin-bottom: 0;
+}
+
+.tdSelect {
+  border: 1px solid var(--co-table-row-border);
+  padding: 5px 6px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.tableWrapper {
+  position: relative;
+}
+
+.loadingOverlayWhite {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  z-index: 100;
+  pointer-events: all;
+  border-radius: 4px;
+}

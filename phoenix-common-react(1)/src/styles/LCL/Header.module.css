@@ -1,0 +1,118 @@
+.cargoStatusRow {
+    background: #f9f9f9;
+    border-bottom: 1px solid #D7D7D7;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0px;
+    padding: 2px 0px;
+    justify-content: flex-end;
+}
+
+.cargoStatusBtn {
+    direction: ltr;
+    background: linear-gradient(to bottom, #fff 4%, #e2e2e2 100%);
+    border: 1px solid #c2c4c9;
+    height: 24px;
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 24px;
+    padding: 0 8px;
+    border-radius: 4px;
+    color: #333;
+    display: block;
+    cursor: pointer;
+    outline: 0;
+    margin-right: 5px;
+}
+
+.cargoStatusBtn.active {
+    direction: ltr;
+    background: linear-gradient(to bottom, #ecf9e6 0, #fff 99%);
+    height: 24px;
+    font-size: 11px;
+    border: 1px solid #a6cf94;
+    line-height: 24px;
+    padding: 0 8px;
+    border-radius: 4px;
+    color: #333;
+    display: block;
+    cursor: pointer;
+    outline: 0;
+    margin-right: 5px;
+}
+
+.cargoTabSwitch {
+    display: flex;
+    margin-left: 1%;
+}
+
+.cargoTabBtn.active {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-left: 5px;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: solid 1px #acacac;
+    border-radius: 5px 5px 0 0;
+    font-weight: 700;
+    font-size: 13px;
+    overflow: hidden;
+    position: relative;
+    border-bottom: none;
+    background: #fff;
+    color: #007db0 !important;
+    cursor: pointer;
+}
+
+.cargoTabBtn {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-left: 5px;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: solid 1px #acacac;
+    border-radius: 5px 5px 0 0;
+    color: #000000 !important;
+    font-weight: 700;
+    font-size: 13px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    background: linear-gradient(to bottom, #fff 4%, #e2e2e2 100%);
+}
+
+.cargoTabBtn:global(.MuiButtonBase-root) {
+    min-width: unset;
+    text-transform: none;
+}
+
+.cargoStatusBtn:global(.MuiButtonBase-root) {
+    min-width: unset;
+    text-transform: none;
+    font-size: 11px;
+    height: 24px;
+    padding: 0 8px;
+    line-height: 24px;
+    border-radius: 4px;
+    background: linear-gradient(to bottom, #fff 4%, #e2e2e2 100%);
+    border: 1px solid #c2c4c9;
+    color: #333;
+    box-shadow: none;
+}
+
+
+.cargoStatusBtn:global(.MuiButtonBase-root:hover) {
+    background: linear-gradient(to bottom, #fff 4%, #e2e2e2 100%);
+    box-shadow: none;
+}
+
+.cargoStatusBtn:global(.MuiButtonBase-root.active) {
+    background: linear-gradient(to bottom, #ecf9e6 0, #fff 99%);
+    border: 1px solid #a6cf94;
+    color: #333;
+}

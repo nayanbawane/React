@@ -1,0 +1,329 @@
+/* ── Shared layout rows ── */
+.rowWithTop {
+  display: flex;
+  border-top: 1px solid #c8d8e8;
+  border-bottom: 1px solid #c8d8e8;
+}
+
+.row {
+  display: flex;
+  border-bottom: 1px solid #c8d8e8;
+}
+
+.rowNoBottom {
+  display: flex;
+  margin-bottom: 3px;
+}
+
+.sectionTitleCol {
+  width: 120px;
+  min-width: 120px;
+  background: #e9f6fe;
+  border-right: 1px solid #c8d8e8;
+  padding: 5px 8px;
+  font-weight: 700;
+  font-size: 13px;
+  color: black;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.sectionTitleColCenter {
+  width: 120px;
+  min-width: 120px;
+  background: #e9f6fe;
+  border-right: 1px solid #c8d8e8;
+  padding: 5px 8px;
+  font-weight: 700;
+  font-size: 13px;
+  color: black;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.sectionTitleColTop {
+  width: 120px;
+  min-width: 120px;
+  background: #e9f6fe;
+  border-right: 1px solid #c8d8e8;
+  padding: 8px 8px 5px 8px;
+  font-weight: 700;
+  font-size: 13px;
+  color: black;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+}
+
+.sectionContent {
+  flex: 1;
+  padding: 6px 8px;
+  box-sizing: border-box;
+}
+
+/* ── Search form ── */
+.fieldRow {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.miscFieldsBottom {
+  margin-top: 6px;
+}
+
+.buttonArea {
+  display: flex;
+  align-items: center;
+  background: #e9f6fe;
+  padding: 8px 0 8px 128px;
+  gap: 6px;
+}
+
+.btn {
+  height: 22px;
+  min-width: 56px;
+  padding: 0 10px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid #0066a5;
+  border-radius: 2px;
+  background: linear-gradient(180deg, #3aa0d8 0%, #1f79b7 100%);
+  color: white;
+}
+
+.btn:hover:not(:disabled) {
+  background: linear-gradient(180deg, #2a8fc7 0%, #0f68a6 100%);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* ── Result table ── */
+.tableWrap {
+  overflow-x: auto;
+  padding-right: 8px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.th {
+  background: #e9e9e9;
+  color: #000000;
+  padding: 4px 8px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 11px;
+  border-right: rgba(255, 255, 255, 0.2) 1px solid;
+  white-space: nowrap;
+}
+
+.thLast {
+  background: #e9e9e9;
+  color: #000000;
+  padding: 4px 8px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 11px;
+  width: 60px;
+  border-right: none;
+  white-space: nowrap;
+}
+
+.td {
+  padding: 3px 8px;
+  border-bottom: 1px solid #c8d8e8;
+  font-size: 11px;
+  vertical-align: middle;
+}
+
+.tdBtn {
+  padding: 3px 4px;
+  border-bottom: 1px solid #c8d8e8;
+  font-size: 11px;
+  vertical-align: middle;
+  text-align: center;
+  width: 60px;
+}
+
+.tdExpandedLeft {
+  padding: 3px 8px;
+  border-bottom: 1px solid #c8d8e8;
+  font-size: 11px;
+  vertical-align: middle;
+  border-left: 2px solid #c8d8e8;
+}
+
+.tdBtnExpanded {
+  padding: 3px 4px;
+  border-bottom: 1px solid #c8d8e8;
+  font-size: 11px;
+  vertical-align: middle;
+  text-align: center;
+  width: 60px;
+  border-right: 2px solid #c8d8e8;
+}
+
+.tdNoRecord {
+  padding: 16px 8px;
+  border-bottom: 1px solid #c8d8e8;
+  font-size: 11px;
+  vertical-align: middle;
+  text-align: center;
+  color: #888;
+}
+
+.trEven {
+  background: #ffffff;
+}
+
+.trOdd {
+  background: #f5f9ff;
+}
+
+.actionBtnRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.actionBtn {
+  background: #e6e6e6;
+  border: 1px solid #c8d8e8;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 0;
+  color: #3295cf;
+  border-radius: 2px;
+}
+
+.actionBtnPlus {
+  background: #e6e6e6;
+  border: 1px solid #c8d8e8;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0;
+  color: #3295cf;
+  border-radius: 2px;
+}
+
+.detailCell {
+  padding: 0;
+  border-left: 2px solid #c8d8e8;
+  border-right: 2px solid #c8d8e8;
+  border-bottom: 2px solid #c8d8e8;
+  background: #ffffff;
+}
+
+/* ── Toolbar ── */
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  background: #efefef;
+  margin-bottom: 12px;
+  margin-top: 4px;
+}
+
+.toolbarTitle {
+  font-weight: 700;
+  font-size: 13px;
+  color: #0093d2;
+}
+
+.backLink {
+  color: #37b4e9;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+/* ── LocationResultDetail ── */
+.detailWrapper {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+.detailRow {
+  display: flex;
+  border-bottom: 1px solid #c8d8e8;
+}
+
+.detailRowNoBottom {
+  display: flex;
+  margin-bottom: 3px;
+}
+
+.detailLabelCol {
+  width: 20%;
+  min-width: 140px;
+  background: #e9f6fe;
+  border-right: 1px solid #c8d8e8;
+  padding: 5px 8px;
+  font-weight: 700;
+  font-size: 11px;
+  color: #0078c2;
+  box-sizing: border-box;
+}
+
+.detailContentCol {
+  flex: 1;
+  background: #ffffff;
+  padding: 10px 16px;
+  box-sizing: border-box;
+}
+
+.detailGrid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+  row-gap: 14px;
+}
+
+.detailGrid4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 40px;
+}
+
+.detailFieldLabel {
+  font-weight: 700;
+  font-size: 12px;
+  margin-bottom: 3px;
+  color: #333;
+}
+
+.detailFieldValue {
+  font-size: 12px;
+  color: #555;
+}
+
+.infoFieldItem {
+  margin-bottom: 12px;
+}
+
+/* ── NoFilterPopup ── */
+.message {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  color: #333;
+  padding: 8px 0;
+  line-height: 1.6;
+}

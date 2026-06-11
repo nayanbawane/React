@@ -1,0 +1,132 @@
+.main-details-container {
+  width: 100%;
+  background-color: #ffffff;
+  font-family: sans-serif;
+  font-size: 11px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
+  overflow: hidden;
+  padding: 4px 8px;
+  border-top: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-details-grid {
+  display: grid;
+  column-gap: 16px;
+  row-gap: 2px;
+  margin-bottom: 10px;
+}
+
+.grid-cols-20 {
+  grid-template-columns: repeat(20, minmax(0, 1fr));
+}
+
+.main-details-container .MuiInputBase-root {
+    /* height: 26px; */
+    background-color: white !important;
+    border-radius: 1px !important;
+    font-size: 12px !important;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.3),
+    inset -1px -1px 1px rgba(255, 255, 255, 0.7);
+    width: 100% !important;
+}
+
+.main-details-container .MuiInputBase-root.Mui-disabled {
+    background-color: #f5f5f5;
+}
+
+.main-details-container .MuiOutlinedInput-input {
+    padding: 0 4px;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 11px;
+}
+
+.main-details-container .MuiSelect-select {
+    padding: 0 20px 0 4px !important;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 11px;
+}
+
+.main-details-container .MuiInputLabel-root {
+    font-size: 13px;
+    color: #333;
+    margin-bottom: 1px;
+    line-height: 1.1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-details-container .MuiOutlinedInput-notchedOutline {
+    border-color: #b0b0b0;
+    border-width: 1px;
+    border-radius: 2px;
+}
+
+.main-details-container .Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #007fe1;
+    border-width: 1px;
+}
+
+/* Required Error Field Styles (Red Border and Text) */
+.main-details-container .error-field .MuiOutlinedInput-notchedOutline {
+    border-color: #d32f2f;
+}
+
+.main-details-container .error-field .MuiSelect-select,
+.main-details-container .error-field .MuiInputBase-input {
+    color: #d32f2f;
+}
+
+/* DatePicker icon size adjustment */
+.main-details-container .MuiInputAdornment-root .MuiSvgIcon-root {
+    font-size: 14px;
+}
+
+.main-details-container .MuiInputAdornment-root .MuiIconButton-root {
+    padding: 1px;
+}
+
+/* Force DatePicker input to match compact 24px height */
+.main-details-container .MuiPickersTextField-root {
+    height: auto !important;
+}
+
+.main-details-container .MuiPickersInputBase-root,
+.main-details-container .MuiPickersOutlinedInput-root {
+    height: 26px !important;
+    min-height: 26px !important;
+    font-size: 13px !important;
+    display: flex !important;
+    align-items: center !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.3),
+    inset -1px -1px 1px rgba(255, 255, 255, 0.7);
+}
+
+.main-details-container .MuiPickersInputBase-root .MuiPickersInputBase-input {
+    padding: 0 4px !important;
+    font-size: 13px !important;
+    height: 26px !important;
+    line-height: 26px !important;
+    box-sizing: border-box;
+}
+
+.main-details-container .MuiPickersInputBase-root .MuiPickersInputBase-sectionsContainer {
+    height: 26px !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.main-details-container .MuiInputAdornment-root {
+    height: 26px !important;
+    display: flex !important;
+    align-items: center !important;
+    margin: 0 !important;
+}

@@ -1,0 +1,229 @@
+.cargoLotSection {
+    border-top: 1px solid #e0e4e8;
+    padding-top: 8px;
+    margin-top: 4px;
+    width: 100%;
+    min-width: 0;
+}
+
+.cargoInternalSection {
+    width: 305px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    max-width: 100%;
+    align-self: stretch;
+}
+
+.cargoLotContainer {
+    display: flex;
+    gap: 6px;
+    align-items: stretch;
+    min-width: 0;
+    flex-wrap: wrap;
+}
+
+.cargoLotActions {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    align-self: flex-start;
+    padding-top: 16px;
+    flex: 0 0 auto;
+}
+.freeTextInput {
+    width: 142px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+}
+
+.freeTextInput :global(.MuiOutlinedInput-root) {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666;
+    height: 71px;
+    align-items: flex-start;
+    padding: 0 !important;
+}
+
+.freeTextInput :global(.MuiInputBase-root) {
+    padding: 0 !important;
+}
+
+.freeTextInput :global(.MuiOutlinedInput-root) textarea {
+    overflow: auto !important;
+    resize: none;
+}
+
+.freeTextInput :global(.MuiOutlinedInput-root) fieldset {
+    border-color: #B7B7B7 !important;
+}
+
+.cargoLotMid {
+    width: 325px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+    height: 71px;
+    margin-bottom: 1rem;
+}
+
+.cargoLotLeft {
+    width: 142px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    flex: 0 0 auto;
+}
+
+.cargoLotRow {
+    display: flex;
+    gap: 4px;
+    align-items: flex-start;
+    margin-bottom: 4px;
+    min-width: 0;
+}
+
+.cargoLotList {
+    min-width: 0;
+}
+
+.cargoLotLabel {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    display: block;
+    white-space: nowrap;
+    padding-top: 3px;
+}
+
+.cargoLotLeft :global(.MuiOutlinedInput-root) {
+    height: 22px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666;
+    border-radius: 2px;
+    background-color: #fff;
+    padding: 0 !important;
+}
+
+.cargoLotLeft :global(.MuiInputBase-root) {
+    padding: 0 !important;
+}
+
+.cargoLotLeft :global(.MuiOutlinedInput-root) fieldset {
+    border-top-color: #999 !important;
+    border-left-color: #999 !important;
+    border-right-color: #CCC !important;
+    border-bottom-color: #CCC !important;
+    border-width: 1px !important;
+    border-radius: 2px;
+}
+
+.cargoLotLeft :global(.MuiSelect-select) {
+    padding: 2px 4px !important;
+    display: flex;
+    align-items: center;
+    line-height: 18px;
+}
+
+.cargoLotLeft :global(.MuiSvgIcon-root) {
+    color: #666;
+}
+
+.cargoLotMid :global(.MuiOutlinedInput-root) {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666;
+    /*height: auto !important;*/
+    height: 71px;
+    align-items: flex-start;
+    padding: 0 !important;
+}
+
+.cargoLotMid :global(.MuiInputBase-root) {
+    padding: 0 !important;
+}
+
+.cargoLotMid :global(.MuiOutlinedInput-root) textarea {
+    overflow: auto !important;
+    resize: none;
+}
+
+.cargoLotMid :global(.MuiOutlinedInput-root) fieldset {
+    border-color: #B7B7B7 !important;
+}
+
+.mandatoryDetails :global(.MuiOutlinedInput-root) fieldset {
+    border-color: #D70000 !important;
+}
+
+.cargoInternalSection :global(.MuiFormControl-root) {
+    flex: 1;
+    min-height: 0;
+}
+
+.cargoInternalSection :global(.MuiOutlinedInput-root) {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666;
+    height: 100%;
+    align-items: flex-start;
+    padding: 0 !important;
+}
+
+.cargoInternalSection :global(.MuiInputBase-root) {
+    padding: 0 !important;
+}
+
+.cargoInternalSection :global(.MuiOutlinedInput-root) fieldset {
+    border-color: #B7B7B7 !important;
+}
+
+.cargoInternalSection :global(.MuiInputBase-input) {
+    height: 100% !important;
+    overflow-y: auto !important;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.cargoInstructionsSection {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+    flex-wrap: wrap;
+}
+
+.cargoInstructionsField {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    width: 385px;
+    height: 100%;
+}
+
+.cargoInstructionsField :global(.MuiOutlinedInput-root) {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666;
+    height: auto !important;
+    align-items: flex-start;
+    padding: 0 !important;
+}
+
+.cargoInstructionsField :global(.MuiInputBase-root) {
+    padding: 0 !important;
+}
+
+.cargoInstructionsField :global(.MuiOutlinedInput-root) fieldset {
+    border-color: #B7B7B7 !important;
+}
+
+.cargoInstructionsField :global(.MuiOutlinedInput-root) textarea {
+    resize: none;
+    overflow: auto !important;
+}

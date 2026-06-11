@@ -1,0 +1,351 @@
+/* PHX-131742: FCL Booking: cargo details section changes - Added by dhapatel */
+.bookingCargoWrapper {
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.headerRow {
+    display: grid;
+    grid-template-columns: 12% 1fr 9% 9% 9% 9% 9% 50px;
+    gap: 6px;
+    padding: 4px 0 0 0;
+}
+
+.headerCell {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+}
+
+.cargoRow {
+    display: grid;
+    grid-template-columns: 12% 1fr 9% 9% 9% 9% 9% 50px;
+    gap: 6px;
+    align-items: start;
+    border-bottom: 1px solid #e8ecf0;
+    padding: 4px 0;
+}
+
+.inputCell {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    width: 100%;
+}
+
+.equipmentDetailsCell {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+}
+
+.actionsCell {
+    display: flex;
+    align-self: stretch;
+    justify-content: flex-end;
+    padding-top: 0;
+}
+
+.cargoRowActionsBox {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    height: 100%;
+    align-items: stretch;
+}
+
+.cargoRowActionBtn {
+    width: 22px;
+    height: 100%;
+    background: linear-gradient(#f5f5f5, #e6e6e6);
+    color: #2b88c5;
+    border: 1px solid #c8c8c8;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 0;
+    line-height: 1;
+    font-weight: bolder;
+    box-shadow: inset 0 1px 0 #ffffff;
+}
+
+.cargoRowActionBtn:hover {
+    background-color: #eaeaea;
+    color: #106ebe;
+}
+
+.cargoRowActionBtn:active {
+    background-color: #e0e0e0;
+}
+
+.cargoRowActionBtn:global(.MuiButtonBase-root) {
+    min-width: unset;
+    padding: 0;
+    text-transform: none;
+    border-radius: 0 !important;
+    height: 100% !important;
+}
+
+.cargoRowActionBtn:global(.Mui-disabled) {
+    color: #c8c8c8;
+    background-color: transparent;
+    border-color: #e6e6e6;
+}
+
+.cargoRowActionDivider {
+    display: none;
+}
+
+.inputCell :global(.MuiFormControl-root) {
+    width: 100%;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.inputCell :global(.MuiOutlinedInput-root) {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    height: 22px;
+    border-radius: 0;
+    background-color: #fff;
+    padding: 0 !important;
+}
+
+.inputCell :global(.MuiInputBase-root) {
+    padding: 0 !important;
+}
+
+.inputCell :global(.MuiOutlinedInput-root) input {
+    padding: 0 6px !important;
+    height: 22px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    line-height: 22px;
+}
+
+.inputCell :global(.MuiOutlinedInput-root) fieldset {
+    border-color: #999 !important;
+    box-shadow: inset 1px 1px 1px #DDD;
+}
+
+.inputCell :global(.MuiOutlinedInput-root.Mui-error) fieldset {
+    border-color: #d70000 !important;
+}
+.errorBorder {
+    border: 1px solid #d70000 !important;
+    border-radius: 2px;
+}
+.errorBorder :global(.MuiOutlinedInput-root) fieldset {
+    border: none !important; /* Hide inner border to prevent double border */
+}
+
+.inputCell input[type="number"]::-webkit-outer-spin-button,
+.inputCell input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.inputCell input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.inputCell :global(.MuiOutlinedInput-root) textarea {
+    overflow: auto !important;
+    resize: none;
+    height: 50px !important;
+    padding: 4px 6px !important;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+.inputCell :global(.MuiOutlinedInput-root.MuiInputBase-multiline) {
+    height: auto !important;
+    min-height: 50px;
+}
+
+.equipmentDetailsCell :global(.MuiFormControl-root) {
+    width: 100%;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.equipmentDetailsCell :global(.MuiOutlinedInput-root) {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    height: 22px;
+    border-radius: 0;
+    background-color: #fff;
+    padding: 0 !important;
+}
+
+.equipmentDetailsCell :global(.MuiInputBase-root) {
+    padding: 0 !important;
+}
+
+.equipmentDetailsCell :global(.MuiOutlinedInput-root) input {
+    padding: 0 6px !important;
+    height: 22px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    line-height: 22px;
+}
+
+.equipmentDetailsCell :global(.MuiOutlinedInput-root) fieldset {
+    border-color: #999 !important;
+    box-shadow: inset 1px 1px 1px #DDD;
+}
+
+.equipmentDetailsCell :global(.MuiOutlinedInput-root.Mui-error) fieldset {
+    border-color: #d70000 !important;
+}
+
+.equipmentDetailsCell :global(.MuiOutlinedInput-root) .MuiSelect-select {
+    padding: 0 6px !important;
+    display: flex;
+    align-items: center;
+    line-height: 22px;
+    height: 22px;
+    box-sizing: border-box;
+}
+
+.addDimensionBtn {
+    margin-top: 10px !important;
+    font-size: 11px !important;
+    padding: 2px 8px !important;
+    height: 22px !important;
+    white-space: nowrap !important;
+    background: linear-gradient(#f5f5f5, #e6e6e6) !important;
+    border: 1px solid #c8c8c8 !important;
+    color: #333 !important;
+    text-transform: none !important;
+    min-width: unset !important;
+    border-radius: 3px !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    box-shadow: inset 0 1px 0 #ffffff;
+}
+
+.addDimensionBtn:hover {
+    background: linear-gradient(#ffffff, #eaeaea) !important;
+    border-color: #bdbdbd !important;
+}
+
+.addDimensionBtn:active {
+    background: linear-gradient(#e0e0e0, #f5f5f5) !important;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15) !important;
+}
+
+.dimensionsSection {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 8px 0;
+    width: fit-content;
+}
+
+.dimensionsHeaderRow {
+    display: flex;
+    gap: 3px;
+    padding-left: 1px;
+    margin-bottom: 2px;
+}
+
+.dimensionsHeaderCell {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    font-weight: normal;
+    white-space: nowrap;
+}
+
+.dimColHeader {
+    width: 65px;
+    flex-shrink: 0;
+}
+
+.dimColWideHeader {
+    width: 118px;
+    flex-shrink: 0;
+}
+
+.dimRowSel66Header {
+    width: 66px;
+    flex-shrink: 0;
+}
+
+.dimRowSel100Header {
+    width: 100px;
+    flex-shrink: 0;
+}
+
+.reeferSection {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding: 8px 12px;
+    background-color: #fafafa;
+    border: 1px solid #e8ecf0;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    width: fit-content;
+    border-radius: 2px;
+    align-items: flex-start;
+}
+
+.reeferField {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.reeferLabel {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    white-space: nowrap;
+}
+
+.reeferField :global(.MuiFormControl-root) {
+    width: 80px !important;
+    margin: 0 !important;
+}
+
+.reeferField :global(.MuiOutlinedInput-root) {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    height: 22px;
+    border-radius: 0;
+    background-color: #fff;
+    padding: 0 !important;
+}
+
+.reeferField :global(.MuiOutlinedInput-root) input {
+    padding: 0 6px !important;
+    height: 22px;
+    font-size: 13px;
+    box-sizing: border-box;
+    line-height: 22px;
+}
+
+.reeferField :global(.MuiOutlinedInput-root) fieldset {
+    border-color: #999 !important;
+    box-shadow: inset 1px 1px 1px #DDD;
+}
+/* PHX-131742: FCL Booking: cargo details section changes - Added by dhapatel */

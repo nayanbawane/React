@@ -1,0 +1,882 @@
+/* ─── RateDetails.tsx ─── */
+.wrapper {
+  padding: 12px;
+  width: 100%;
+  background-color: white;
+  font-family: Arial, sans-serif;
+}
+
+.roeSection {
+  margin-bottom: 16px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 8px;
+}
+
+.roeTitle {
+  color: #2b8bb5;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.roeFieldsRow {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  margin-bottom: 8px;
+}
+
+.roeCurrencyRow {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  padding-bottom: 8px;
+}
+
+.shipmentSummarySection {
+  margin-bottom: 16px;
+  padding-bottom: 5px;
+}
+
+.shipmentSummaryTitle {
+  color: #2b8bb5;
+  font-size: 12px;
+  margin-bottom: 4px;
+  display: inline-block;
+  font-weight: 500;
+}
+
+.shipmentSummaryColumns {
+  display: flex;
+  gap: 0;
+  align-items: stretch;
+}
+
+.shipmentSummaryCol {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0 8px;
+  border-left: 1px solid #e0e0e0;
+}
+
+.shipmentSummaryCol:first-child {
+  border-left: none;
+}
+
+.shipmentSummaryLabel {
+  font-size: 12px;
+  font-weight: 700;
+  color: #555;
+  border-bottom: 1px solid #eee;
+}
+
+.shipmentSummaryValue {
+  font-size: 12px;
+  font-weight: 500;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.controlsRow {
+  padding-bottom: 8px;
+  margin-bottom: 4px;
+}
+
+.controlsWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.controlsTop {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+}
+
+.pickupToggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  min-width: 120px;
+  gap: 4px;
+}
+
+.pickupArrowContainer {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pickupToggleIcon {
+  color: #2b8bb5;
+  transition: transform 0.2s;
+}
+
+.pickupToggleIconExpanded {
+  color: #2b8bb5;
+  transform: rotate(90deg);
+}
+
+.pickupTitle {
+  color: #2b8bb5;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.rippleButtonsRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ratingRow {
+  /* margin-top: 4px; */
+  /* background-color: red; */
+  display: flex;
+  gap: 3px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.ratingLabel {
+  font-size: 13px;
+  color: #333;
+  font-weight: 400;
+}
+
+.resetBtn {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.accordionStack {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.modalContent {
+  padding: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.confirmText {
+  font-size: 13px;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.modalActions {
+  display: flex;
+  gap: 8px;
+}
+
+.confirmBtn {
+  padding: 4px 18px !important;
+  font-size: 12px !important;
+  color: #fff !important;
+  border: 1px solid #005a9e !important;
+  border-radius: 2px !important;
+  text-transform: none !important;
+  background: linear-gradient(to bottom, #0078d7 0%, #0063b1 100%) !important;
+}
+
+.confirmBtn:hover {
+  background: linear-gradient(to bottom, #006fc7 0%, #005a9e 100%) !important;
+}
+
+.cancelBtn {
+  padding: 4px 18px !important;
+  font-size: 12px !important;
+  color: #fff !important;
+  border: 1px solid #777 !important;
+  border-radius: 2px !important;
+  text-transform: none !important;
+  background: linear-gradient(to bottom, #9a9a9a 0%, #7d7d7d 100%) !important;
+}
+
+.cancelBtn:hover {
+  background: linear-gradient(to bottom, #8f8f8f 0%, #6f6f6f 100%) !important;
+}
+
+/* ─── PRateDetailsPickupChargesRow & PRateDetailsChargesRow (shared table styles) ─── */
+
+.readonlyText {
+  font-size: 11px;
+  color: #555;
+  padding: 0 4px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.tableWrap {
+  /* overflow-x: auto; */
+}
+
+.table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.tableRow {
+  height: 22px;
+}
+
+.expenseRow {
+  background-color: #f2fdff; /* light red */
+}
+
+.cell {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  border-right: 1px solid #c8c8c8;
+  border-bottom: 1px solid #c8c8c8;
+  padding: 2px;
+}
+
+.cellRight {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  border-right: 1px solid #c8c8c8;
+  border-bottom: 1px solid #c8c8c8;
+  padding: 2px;
+  text-align: right;
+}
+
+.cellNoRightBorder {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  border-bottom: 1px solid #c8c8c8;
+  padding: 2px;
+}
+
+.iconCell {
+  border-left: 1px solid #c8c8c8;
+  border-right: 1px solid #c8c8c8;
+  border-bottom: 1px solid #c8c8c8;
+  background-color: #f5f5f5;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0;
+}
+
+.actionCell {
+  border-left: 1px solid #c8c8c8;
+  border-right: 1px solid #c8c8c8;
+  border-bottom: 1px solid #c8c8c8;
+  background-color: #f5f5f5;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0;
+  cursor: pointer;
+  display: table-cell;
+}
+
+.actionCellDisabled {
+  border-left: 1px solid #c8c8c8;
+  border-right: 1px solid #c8c8c8;
+  border-bottom: 1px solid #c8c8c8;
+  background-color: #f5f5f5;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0;
+  cursor: default;
+  opacity: 0.4;
+  display: table-cell;
+}
+
+.iconCell + .iconCell {
+  border-left: none;
+}
+
+.actionCell img,
+.actionCellDisabled img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.accordion :global(.MuiAccordionSummary-expandIconWrapper.Mui-expanded) {
+  transform: none !important;
+}
+
+.headerCell {
+  font-size: 11px;
+  font-weight: 700;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  border-right: 1px solid #c8c8c8;
+  border-top: 1px solid #c8c8c8;
+  padding: 6px 2px;
+  background-color: #f5f5f5;
+  white-space: normal;
+  word-break: break-word;
+  text-align: left;
+  vertical-align: top;
+}
+
+.headerCellRight {
+  font-size: 11px;
+  font-weight: 700;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  border-right: 1px solid #c8c8c8;
+  border-top: 1px solid #c8c8c8;
+  padding: 6px 2px;
+  background-color: #f5f5f5;
+  white-space: normal;
+  word-break: break-word;
+  text-align: right;
+  vertical-align: top;
+}
+
+.headerCellNoRight {
+  font-size: 11px;
+  font-weight: 700;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  border-right: none;
+  border-top: 1px solid #c8c8c8;
+  padding: 6px 2px;
+  background-color: #f5f5f5;
+  white-space: normal;
+  word-break: break-word;
+  text-align: left;
+  vertical-align: top;
+}
+
+/* replaces the last empty <th> that had inline borderLeft */
+.headerCellBorderLeft {
+  border-top: 1px solid #c8c8c8;
+  background-color: #f5f5f5;
+}
+
+.headerCornerLeft {
+  border-left: 1px solid #c8c8c8;
+  border-top: 1px solid #c8c8c8;
+  background-color: #f5f5f5;
+  border-top-left-radius: 8px;
+}
+
+.table thead tr th:last-child {
+  border-right: 1px solid #c8c8c8;
+  border-top-right-radius: 8px;
+}
+
+.headerCornerRight {
+  font-size: 11px;
+  font-weight: 700;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  border-right: 1px solid #c8c8c8;
+  border-top: 1px solid #c8c8c8;
+  padding: 6px 2px;
+  background-color: #f5f5f5;
+  white-space: normal;
+  word-break: break-word;
+  text-align: left;
+  vertical-align: top;
+  border-top-right-radius: 8px;
+}
+
+.headerNoLeft {
+  border-top: 1px solid #c8c8c8;
+  background-color: #f5f5f5;
+}
+
+.table tbody tr:first-child td {
+  border-top: 1px solid #c8c8c8;
+}
+
+.subRowCell {
+  padding: 0 8px;
+  vertical-align: middle;
+  background-color: #f5f5f5;
+  border-right: 1px solid #c8c8c8;
+  border-bottom: 1px solid #c8c8c8;
+}
+
+.subRowCellDivider {
+  padding: 0 8px;
+  vertical-align: middle;
+  background-color: #f5f5f5;
+  border-right: 1px solid #c8c8c8;
+  border-bottom: 1px solid #c8c8c8;
+}
+
+.descriptionCell {
+  padding: 0 4px;
+  border-right: 1px solid #c8c8c8;
+  border-bottom: 1px solid #c8c8c8;
+}
+
+.cellText {
+  font-size: 12px;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.cellTextBold {
+  font-size: 12px;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+/* replaces style={{ color: '#555' }} on currency Typography */
+.cellTextMuted {
+  font-size: 12px;
+  color: #555;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* replaces style={{ paddingRight: '4px' }} on amount Typography */
+.cellTextPaddedRight {
+  font-size: 12px;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-right: 4px;
+  text-align: right;
+}
+
+.calculatedAmountCell {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  /* padding: 0 4px; */
+}
+
+.chevronExpanded {
+  cursor: pointer;
+  transform: rotate(90deg);
+  color: #555;
+}
+
+.chevronCollapsed {
+  cursor: pointer;
+  color: #555;
+}
+
+/* Number input — hide spinners, right-align */
+.numericInput {
+  width: 100%;
+}
+
+.numericInput :global(input) {
+  text-align: right;
+}
+
+.numericInput :global(input[type='number']::-webkit-inner-spin-button),
+.numericInput :global(input[type='number']::-webkit-outer-spin-button) {
+  display: none;
+}
+
+.numericInput :global(input[type='number']) {
+  -moz-appearance: textfield;
+}
+
+/* replaces style={{ width: 16 }} on collapsed imgIncome */
+.imgSmall {
+  width: 16px;
+}
+
+/* Plus icon color — replaces color="#2b8bb5" prop */
+.plusIcon {
+  color: #2b8bb5;
+}
+
+/* Minus icon color — replaces color="#777" prop */
+.minusIcon {
+  color: #777;
+}
+
+/* InfoIcon — replaces color="#1976d2" + style={{ cursor: 'pointer' }} */
+.infoIcon {
+  color: #1976d2;
+  cursor: pointer;
+}
+
+/* ─── PRateDetailsTotalCharge ─── */
+.totalsWrapper {
+  border: 1px solid #c8c8c8;
+  border-radius: 0;
+  overflow-x: auto;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.totalsHeader {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 0;
+  background-color: #e8e8e8;
+  cursor: pointer;
+  user-select: none;
+}
+
+.totalsHeaderExpanded {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 0;
+  background-color: #e8e8e8;
+  cursor: pointer;
+  border-bottom: 1px solid #d4d4d4;
+  user-select: none;
+}
+
+.totalsTitle {
+  font-size: 13px;
+  font-weight: 400;
+  color: #2b8bb5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.totalsTable {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+  min-width: 600px;
+}
+
+.thBase {
+  font-size: 12px;
+  font-weight: 700;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  border-right: 1px solid #c8c8c8;
+  border-bottom: 1px solid #c8c8c8;
+  border-top: 1px solid #c8c8c8;
+  padding: 0 2px;
+  background-color: #f5f5f5;
+  white-space: normal;
+  word-break: break-word;
+  text-align: left;
+}
+
+.thBaseNoRight {
+  font-size: 12px;
+  font-weight: 700;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  border-right: none;
+  /* border-bottom: 1px solid #c8c8c8; */
+  /* border-top: 1px solid #c8c8c8; */
+  padding: 0 2px;
+  background-color: #f5f5f5;
+  white-space: normal;
+  word-break: break-word;
+  text-align: left;
+}
+
+.thTotal {
+  font-size: 12px;
+  font-weight: 700;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  border-right: 1px solid #c8c8c8;
+  border-bottom: 1px solid #c8c8c8;
+  border-top: 1px solid #c8c8c8;
+  padding: 0 2px;
+  background-color: #f5f5f5;
+  white-space: normal;
+  word-break: break-word;
+  text-align: left;
+}
+
+.tdBase {
+  padding: 0 4px;
+  font-size: 12px;
+  border-bottom: 1px solid #e8e8e8;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tdBaseRight {
+  padding: 0 4px;
+  font-size: 12px;
+  border-bottom: 1px solid #e8e8e8;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: right;
+  border-right: 1px solid #e8e8e8;
+}
+
+.tdLabelCell {
+  padding: 0 2px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  border-right: 1px solid #e8e8e8;
+  background-color: white;
+  vertical-align: middle;
+  word-break: break-word;
+}
+
+.tdExpandCell {
+  padding: 0 2px;
+  border-right: 1px solid #e8e8e8;
+  vertical-align: middle;
+}
+
+.expandToggle {
+  cursor: pointer;
+  display: inline-flex;
+}
+
+.thImageRow {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.thImage {
+  width: 15px;
+}
+
+.tableBodyRow {
+  background-color: #fff;
+}
+
+/* ─── PRateDetailsCurrencyConverter ─── */
+.converterWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.converterLabelsRow {
+  display: flex;
+  align-items: end;
+  gap: 4px;
+  margin-bottom: 2px;
+  padding-left: 16px; /* offset for the index number column */
+}
+
+.converterLabel {
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+  line-height: normal;
+}
+
+.converterRow {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 2px;
+}
+
+.converterIndex {
+  font-size: 12px;
+  color: #333;
+  width: 12px;
+  flex-shrink: 0;
+  text-align: right;
+}
+
+/* Fixed-width wrapper for the currency searchable field */
+.converterCurrencyField {
+  width: 9rem;
+  flex-shrink: 0;
+}
+
+/* Fixed-width wrapper for ROE rate text fields */
+.converterRateField {
+  width: 9rem;
+  flex-shrink: 0;
+}
+
+/* Fixed-width unit label (e.g. "USD/EUR") — prevents layout shift when currency changes */
+.converterUnitLabel {
+  width: 3.5rem;
+  flex-shrink: 0;
+  font-size: 12px;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-wrap: inherit;
+  display: inline-block;
+}
+
+.converterArrow {
+  width: 16px;
+  flex-shrink: 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.converterArrow img {
+  width: 100%;
+}
+
+.converterButtons {
+  display: flex;
+  gap: 4px;
+  margin-left: 8px;
+}
+
+.converterBtn {
+  background-color: #fff;
+  border: 1px solid #c0c0c0;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  color: #777;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ─── PRateDetailsAccordion ─── */
+.accordion {
+  box-shadow: none !important;
+  border: none !important;
+  background: transparent !important;
+  margin: 0 !important;
+}
+
+.accordion:global(.MuiAccordion-root)::before {
+  display: none !important; /* removes top divider line */
+}
+
+.accordion :global(.MuiAccordionSummary-root) {
+  min-height: auto !important;
+  flex-direction: row-reverse;
+  padding: 0;
+  gap: 4px;
+}
+
+.accordion :global(.MuiAccordionSummary-content) {
+  margin: 0 !important;
+  align-items: center;
+}
+
+.accordion :global(.MuiAccordionSummary-expandIconWrapper) {
+  transform: rotate(0deg);
+  color: #2b8bb5;
+}
+
+.accordion :global(.MuiAccordionSummary-expandIconWrapper.Mui-expanded) {
+  transform: rotate(90deg);
+}
+
+.accordion :global(.MuiAccordionDetails-root) {
+  padding: 0;
+}
+
+.accordion :global(.MuiAccordion-root::before) {
+  display: none;
+}
+
+.accordionTitle {
+  font-size: 13px;
+  font-weight: 400;
+  color: #2b8bb5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.accordionArrow {
+  width: 16px;
+  height: 16px;
+}
+
+.accordionArrow {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+/* ─── RateDetailsIcon ─── */
+.iconLegend {
+  display: flex;
+  gap: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  padding: 10px;
+}
+
+.iconLegendItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.iconLegendLabel {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Right border closing cell when plus/minus columns are hidden */
+.borderClosingCell {
+  border-right: 1px solid #c8c8c8;
+  border-bottom: 1px solid #c8c8c8;
+  background-color: #f5f5f5;
+  padding: 0;
+  width: 4px;
+}
+
+/* Last data cell right border when no plus/minus columns */
+.cellLastBorder {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  border-right: 1px solid #c8c8c8;
+  border-bottom: 1px solid #c8c8c8;
+  padding: 2px;
+}
+
+/* Description cell that is last — needs right border */
+.descriptionCellLast {
+  padding: 0 4px;
+  border-right: 1px solid #c8c8c8;
+  border-bottom: 1px solid #c8c8c8;
+}
+
+.tdNoBorder {
+  border-bottom: none !important;
+}
+
+.tdSectionDivider {
+  border-bottom: 1px solid #c8c8c8 !important;
+}
+
+.converterInvoiceSpacer {
+  min-width: 84px;
+  flex-shrink: 0;
+}
+
+.converterBtnDisabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.accurateLoaderBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}

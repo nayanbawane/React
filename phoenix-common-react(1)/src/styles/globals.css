@@ -1,0 +1,122 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root { min-height: 100vh; }
+
+button {
+  cursor: pointer;
+  background: #3498db;
+  /* color: white; */
+  border: none;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+/* button:hover:not(:disabled) { background: #2980b9; } */
+button:disabled { opacity: 0.6; cursor: not-allowed; }
+
+input {
+  border: 1px solid #ddd;
+  /* border-radius: 4px; */
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus { border-color: #3498db; }
+
+
+/* ──────────────────────── MUI Select ─────────────────────────────────────────── */
+.MuiSelect-select {
+  padding: 0;
+  padding-left: 3px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 0 !important;
+  color: #666;
+  min-height: 10px;
+  line-height: 10px;
+}
+.MuiSelect-icon { right: 0; }
+
+.MuiMenu-paper {
+  border: .5px solid #757575 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+/* ──────────────────────── MUI OutlinedInput ───────────────────────────────────── */
+.MuiOutlinedInput-root {
+  box-shadow: inset 1px 1px 1px #ddd;
+  background-color: #fff;
+  height: 20px;
+}
+.MuiOutlinedInput-root input {
+  padding: 0 5px;
+  height: 20px;
+  box-sizing: border-box;
+}
+.MuiOutlinedInput-notchedOutline {
+  border: 1px solid !important;
+  border-color: #999 #ccc #ccc #999 !important;
+  box-shadow: inset 1px 1px 1px #ddd;
+  border-radius: 0 !important;
+}
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #999 #ccc #ccc #999 !important;
+}
+.MuiOutlinedInput-root.Mui-focused {
+  outline: 2px solid #000;
+  border-radius: 2px;
+}
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: transparent !important;
+  border-radius: 2px;
+  box-shadow: none !important;
+}
+
+/* ──────────────────────── MUI MenuItem ────────────────────────────────────────── */
+.MuiMenuItem-root {
+  color: #666;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  padding-left: 2px !important;
+  text-align: left;
+  min-height: 25px !important;
+  max-height: 50px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 14px;
+}
+/* .MuiMenuItem-root:hover {
+  background: #1967d2 !important;
+  color: white !important;
+} */
+/* .MuiMenuItem-root.Mui-selected { color: black; } */
+.MuiMenuItem-root.Mui-selected:hover {
+  background: #1967d2 !important;
+  color: white !important;
+}
+
+/* ──────────────────────── MUI Dialog ──────────────────────────────────────────── */
+.MuiDialog-paper {
+  box-shadow: 0 0 10px #0083b9 !important;
+  border-radius: 10px !important;
+  max-height: unset !important;
+  overflow: hidden !important;
+}
+.MuiDialogTitle-root {
+  background-color: #0288d1;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px 0 0 10px !important;
+}
+.MuiDialogContent-root { padding: 0 !important; }

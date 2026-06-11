@@ -1,0 +1,530 @@
+/* Main Details Section Styles */
+
+.main-details-container {
+    width: 100%;
+    background-color: #ffffff;
+    font-family: sans-serif;
+    font-size: 11px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    border-top-left-radius: 0.375rem;
+    border-top-right-radius: 0.375rem;
+    overflow: hidden;
+}
+
+.main-details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  padding: 3px 8px;
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
+  cursor: pointer;
+  background: linear-gradient(to bottom, #0088ef, #006abf);
+}
+
+.main-details-title {
+  font-size: 11px;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 0.025em;
+  color: #ffffff;
+}
+
+.main-details-progress-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.main-details-progress-text {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: #ffffff;
+}
+
+.main-details-progress-bar-wrapper {
+  width: 112px;
+  height: 10px;
+  background-color: #005da0;
+  border-radius: 24px;
+  border: 1.5px solid rgba(255, 255, 255, 0.6);
+  display: flex;
+  overflow: hidden;
+}
+
+.main-details-progress-bar-fill {
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 24px;
+  transition: width 0.3s ease;
+}
+
+.main-details-expand-btn {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+  margin-left: 4px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.main-details-expand-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.expand-icon-line {
+  background-color: #ffffff;
+}
+
+.expand-icon-horizontal {
+  width: 8px;
+  height: 2px;
+}
+
+.expand-icon-vertical {
+  width: 2px;
+  height: 8px;
+  position: absolute;
+}
+
+.main-details-content {
+  padding: 4px 8px;
+  border-top: 0;
+}
+
+.main-details-grid {
+  display: grid;
+  column-gap: 16px;
+  row-gap: 2px;
+  margin-bottom: 10px;
+}
+
+.grid-cols-24 {
+  grid-template-columns: repeat(24, minmax(0, 1fr));
+}
+
+.grid-cols-28 {
+  grid-template-columns: repeat(28, minmax(0, 1fr));
+}
+
+.grid-cols-36 {
+  grid-template-columns: repeat(36, minmax(0, 1fr));
+}
+
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
+
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
+
+.col-span-4 {
+    grid-column: span 4 / span 4;
+}
+
+.col-span-6 {
+    grid-column: span 6 / span 6;
+}
+
+.col-span-7 {
+    grid-column: span 7 / span 7;
+}
+
+.col-span-8 {
+    grid-column: span 8 / span 8;
+}
+
+.more-details-wrapper {
+    margin-top: 4px;
+}
+
+.more-details-toggle {
+    /* display: flex;
+    align-items: center;
+    gap: 2px;
+    color: #007fe1;
+    font-weight: 700;
+    font-size: 10px;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0 0 4px 0;
+    cursor: pointer; */
+    font-size: 12px;
+    color: #4788bf;
+    cursor: pointer;
+    padding: 8px 0;
+    border-top: 1px solid #cfcfcf;
+    margin-top: 4px;
+    user-select: none;
+    font-weight: bold;
+}
+
+.more-details-toggle:hover {
+    text-decoration: underline;
+}
+
+.more-details-toggle:focus {
+    outline: none;
+}
+
+.more-details-arrow {
+    font-size: 9px;
+}
+
+.more-details-content {
+    padding-top: 4px;
+    width: 90%;
+    position: relative;
+}
+
+.more-details-content::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 1px;
+    background-color: #b0b0b0;
+    /* more-details-content is 90% wide; this stretches ::before to cover the full parent width */
+    width: calc(100% / 0.9);
+}
+
+/* Animations */
+.animate-slide-down {
+    animation: slideDown 200ms ease-out forwards;
+}
+
+.animate-fade-slide-down {
+    animation: fadeSlideDown 200ms ease-out forwards;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-8px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeSlideDown {
+    from {
+        transform: translateY(-8px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Date Picker Wrapper */
+.date-picker-field-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.field-label {
+    margin-bottom: 1px;
+    font-size: 11px;
+    color: #333333;
+    letter-spacing: -0.025em;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+/* Error Field Placeholder */
+.error-field {
+    outline: 1px solid #ff000022;
+}
+
+/* Enterprise Theme Overrides for Material UI (Moved from globals.css) */
+.enterprise-form {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.enterprise-form .MuiInputBase-root {
+    /* height: 26px; */
+    background-color: white !important;
+    border-radius: 1px !important;
+    font-size: 12px !important;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.3),
+    inset -1px -1px 1px rgba(255, 255, 255, 0.7);
+    width: 100% !important;
+}
+
+.enterprise-form .MuiInputBase-root.Mui-disabled {
+    background-color: #f5f5f5;
+}
+
+.enterprise-form .MuiOutlinedInput-input {
+    padding: 0 4px;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 11px;
+}
+
+.enterprise-form .MuiSelect-select {
+    padding: 0 20px 0 4px !important;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 11px;
+}
+
+.enterprise-form .MuiInputLabel-root {
+    font-size: 13px;
+    color: #333;
+    margin-bottom: 1px;
+    line-height: 1.1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.enterprise-form .MuiOutlinedInput-notchedOutline {
+    border-color: #b0b0b0;
+    border-width: 1px;
+    border-radius: 2px;
+}
+
+.enterprise-form .Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #007fe1;
+    border-width: 1px;
+}
+
+/* Required Error Field Styles (Red Border and Text) */
+.enterprise-form .error-field .MuiOutlinedInput-notchedOutline {
+    border-color: #d32f2f;
+}
+
+.enterprise-form .error-field .MuiSelect-select,
+.enterprise-form .error-field .MuiInputBase-input {
+    color: #d32f2f;
+}
+
+/* DatePicker icon size adjustment */
+.enterprise-form .MuiInputAdornment-root .MuiSvgIcon-root {
+    font-size: 14px;
+}
+
+.enterprise-form .MuiInputAdornment-root .MuiIconButton-root {
+    padding: 1px;
+}
+
+/* Force DatePicker input to match compact 24px height */
+.enterprise-form .MuiPickersTextField-root {
+    height: auto !important;
+}
+
+.enterprise-form .MuiPickersInputBase-root,
+.enterprise-form .MuiPickersOutlinedInput-root {
+    height: 26px !important;
+    min-height: 26px !important;
+    font-size: 13px !important;
+    display: flex !important;
+    align-items: center !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.3),
+    inset -1px -1px 1px rgba(255, 255, 255, 0.7);
+}
+
+.enterprise-form .MuiPickersInputBase-root .MuiPickersInputBase-input {
+    padding: 0 4px !important;
+    font-size: 13px !important;
+    height: 26px !important;
+    line-height: 26px !important;
+    box-sizing: border-box;
+}
+
+.enterprise-form .MuiPickersInputBase-root .MuiPickersInputBase-sectionsContainer {
+    height: 26px !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.enterprise-form .MuiInputAdornment-root {
+    height: 26px !important;
+    display: flex !important;
+    align-items: center !important;
+    margin: 0 !important;
+}
+
+.enterprise-form .MuiInputAdornment-root .MuiSvgIcon-root {
+    font-size: 16px !important;
+}
+
+/* Toggle Switch enterprise styles */
+.enterprise-toggle {
+    display: flex;
+    height: 26px;
+    width: 100%;
+    max-width: 99px;
+    gap: 0;
+}
+
+.enterprise-toggle-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    line-height: 1;
+    border: 1px solid #b0b0b0;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 0 2px;
+    margin: 0;
+}
+
+/* ===== Responsive: Tablet (<= 1024px) ===== */
+@media (max-width: 1024px) {
+    .main-details-content {
+        padding: 6px 6px;
+    }
+
+    .main-details-grid {
+        column-gap: 10px;
+        row-gap: 6px;
+    }
+
+    /* slightly smaller labels and inputs to fit tablet */
+    .field-label,
+    .more-details-toggle,
+    .main-details-title {
+        font-size: 11px;
+    }
+
+    .enterprise-form .MuiInputBase-root {
+        font-size: 11px !important;
+    }
+
+    /* reduce progress bar width to fit tighter header */
+    .main-details-progress-bar-wrapper {
+        width: 96px;
+        height: 9px;
+    }
+
+    /* Ensure more-details content uses full width on tablet */
+    .more-details-content {
+        width: 100%;
+    }
+
+    /* ::before divider spans full width when content is 100% wide */
+    .more-details-content::before {
+        width: 100%;
+    }
+
+    /* ---- Tablet grid: halve column count so fields wrap to new rows ---- */
+    .grid-cols-24 {
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+
+    .grid-cols-28 {
+        grid-template-columns: repeat(14, minmax(0, 1fr));
+    }
+
+    /* col-span-2 toggle buttons become span-3 to stay readable at tablet width */
+    .main-details-grid .col-span-2 {
+        grid-column: span 3 / span 3;
+    }
+}
+
+/* ===== Responsive: Small Tablet / Large Phone (<= 768px) ===== */
+@media (max-width: 768px) {
+    .main-details-content {
+        padding: 6px 6px;
+    }
+
+    .main-details-grid {
+        column-gap: 8px;
+        row-gap: 6px;
+    }
+
+    /* slightly reduce label and input size */
+    .field-label,
+    .more-details-toggle,
+    .main-details-title {
+        font-size: 10px;
+    }
+
+    .enterprise-form .MuiInputBase-root {
+        font-size: 10px !important;
+    }
+
+    /* Make grid scrollable horizontally if content still overflows */
+    .main-details-content {
+        overflow-x: auto;
+    }
+
+    /* reduce toggle button visual size */
+    .enterprise-toggle {
+        max-width: 86px;
+    }
+
+    /* ---- Small tablet: 8-col grid → 2 fields per row ---- */
+    .grid-cols-24 {
+        grid-template-columns: repeat(8, minmax(0, 1fr));
+    }
+
+    .grid-cols-28 {
+        grid-template-columns: repeat(8, minmax(0, 1fr));
+    }
+
+    /* col-span-7 (More Details) → span-4 to give 2 per row in 8-col grid */
+    .main-details-grid .col-span-7 {
+        grid-column: span 4 / span 4;
+    }
+
+    /* col-span-2 toggles → span-4 at small tablet */
+    .main-details-grid .col-span-2 {
+        grid-column: span 4 / span 4;
+    }
+
+    /* Clauses (col-span-8) → full width */
+    .main-details-grid .col-span-8 {
+        grid-column: span 8 / span 8;
+    }
+}
+
+.enterprise-toggle-btn-left {
+    border-right: none;
+    border-radius: 2px 0 0 2px;
+    background-color: #ececec;
+    color: #666;
+}
+
+.enterprise-toggle-btn-left.active {
+    background-color: #0096d5;
+    color: #f0f0f0;
+}
+
+.enterprise-toggle-btn-right {
+    border-radius: 0 2px 2px 0;
+    background-color: #ececec;
+    color: #666;
+}
+
+.enterprise-toggle-btn-right.active {
+    background-color: white;
+    color: #333;
+}

@@ -1,0 +1,23 @@
+.container {
+  padding: 20px;
+}
+
+.uploadButton {
+  background: linear-gradient(to bottom, #6ab0d6, #3e8ec0);
+  border: 1px solid #2d6d94;
+  color: white;
+  padding: 6px 18px;
+  font-size: 13px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  transition: opacity 0.2s ease;
+}
+
+.uploadButton:hover {
+  opacity: 0.9;
+}
+
+.uploadButton:active {
+  opacity: 0.8;
+}

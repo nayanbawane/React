@@ -1,0 +1,52 @@
+export const ShipmentStatusConstants = {
+  AIR_FREIGHT: 'A',
+  OCEAN_FREIGHT: 'O',
+
+  ACCOUNT_FINANCE: 'ACC',
+  ACCURATE: 'RAT',
+  ACCURATE_TARIFF: 'TAR',
+
+  PUBLIC_NOTE: 'PB',
+  PRIVATE_NOTE: 'PV',
+  PRIVATE_NOTE_THIRD_PARTY: 'Private Note-Third Party System',
+
+  QUO_MODULE: 'QUO',
+  BKG_MODULE: 'BKG',
+  LOT_MODULE: 'LOT',
+  ARN_MODULE: 'ARN',
+  LOAD_PLAN_MODULE: 'LDP',
+  BOL_MODULE: 'BOL',
+  TRUCKING_MODULE: 'T',
+  NON_SHIPMENT_FILE_MODULE: 'NON-SHIPMENT-FILE',
+  EO_FILE_MODULE: 'EO-FILE',
+  IO_FILE_MODULE: 'IO-FILE',
+
+  ADDITIONAL_INVOICE: 'ADD-INV',
+  ARRIVAL_INVOICE: 'ARN-INV',
+  ARN_ADDITIONAL_INVOICE: 'ARN-ADD-INV',
+  RELEAES_ORDER: 'ROL',
+
+  DEVAN_AVAILABLE_STATUS: 'Devan & Available Deconsolidation CFS',
+  DEVAN_AVAILABLE_STATUS_QRLITE: 'Devanned at Deconsolidation CFS (QR Lite)',
+  DEVANNING_AVAILABLE_DECONSOLIDATION_CFS: 'DEVANNING-AVAILABLE-DECONSOLIDATION-CFS',
+  DEVANNING_CONFIRM_STATUS_CODE: 6041,
+  RELEASE_ORDER_STATUS_CODE: [7001, 6566, 6567] as const,
+  RELEASE_ORDER_PENDING: 'RELEASEORDERPENDING',
+  DEVANNING_PENDING: 'DEVANNINGPENDING',
+
+  PLEASE_SELECT: 'PS',
+  DESTINATION_INFORMATION: 'DI',
+  WAREHOUSE_INFORMATION: 'WI',
+} as const;
+
+export type ShipmentModule =
+  | typeof ShipmentStatusConstants.QUO_MODULE
+  | typeof ShipmentStatusConstants.BKG_MODULE
+  | typeof ShipmentStatusConstants.LOT_MODULE
+  | typeof ShipmentStatusConstants.ARN_MODULE
+  | typeof ShipmentStatusConstants.LOAD_PLAN_MODULE
+  | typeof ShipmentStatusConstants.BOL_MODULE
+  | typeof ShipmentStatusConstants.TRUCKING_MODULE
+  | typeof ShipmentStatusConstants.NON_SHIPMENT_FILE_MODULE
+  | typeof ShipmentStatusConstants.EO_FILE_MODULE
+  | typeof ShipmentStatusConstants.IO_FILE_MODULE;

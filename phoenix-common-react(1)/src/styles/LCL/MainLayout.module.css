@@ -1,0 +1,50 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: #1e293b;
+  padding: 16px 20px;
+  color: white;
+}
+
+.nav {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: transparent;
+  transition: background-color 0.2s ease;
+}
+
+.navLink.active {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer {
+  background: #f8fafc;
+  padding: 12px 20px;
+  text-align: center;
+  border-top: 1px solid #e2e8f0;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+  color: #475569;
+}

@@ -1,0 +1,71 @@
+{
+  "name": "phoenix-ocean-react",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "build:staging": "tsc && vite build --mode staging",
+    "build:production": "tsc && vite build --mode production",
+    "preview": "vite preview",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint . --ext ts,tsx --fix",
+    "format": "prettier --write \"src/**/*.{ts,tsx,json,css,md}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,json,css,md}\"",
+    "test": "vitest",
+    "test:ci": "vitest run --coverage",
+    "test:ui": "vitest --ui",
+    "type-check": "tsc --noEmit",
+    "prepare": "husky install",
+    "analyze": "vite-bundle-visualizer"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^7.3.9",
+    "@react-google-maps/api": "^2.20.6",
+    "@reduxjs/toolkit": "^2.11.2",
+    "@uiw/react-baidu-map": "^2.7.5",
+    "axios": "^1.6.7",
+    "dayjs": "^1.11.19",
+    "lucide-react": "^0.577.0",
+    "phoenix-common-react": "file:../phoenix-common-react",
+    "phoenix-react-lib": "file:../../phx-react-ui/phx-react-common-components/phoenix-react-lib-1.0.0.tgz",
+    "react": "^18.3.1",
+    "react-calendar": "^6.0.0",
+    "react-dom": "^18.3.1",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^6.22.3"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "@vitest/ui": "^1.4.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "husky": "^9.0.11",
+    "jsdom": "^24.0.0",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5",
+    "sass-embedded": "^1.97.3",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vite-bundle-visualizer": "^1.0.0",
+    "vitest": "^1.4.0"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,css,md}": [
+      "prettier --write"
+    ]
+  }
+}

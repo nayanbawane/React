@@ -1,0 +1,206 @@
+.container {
+  width: 100%;
+  border: 1px solid #bdbdbd;
+  padding: 8px 10px;
+  box-sizing: border-box;
+}
+
+.row,
+.row2,
+.moreDetailsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.row3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  width: 100%;
+  margin-bottom: 6px;
+  align-items: center;
+}
+
+.field,
+.toggleField {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.checkboxField {
+  display: flex;
+  align-items: center;
+  padding-top: 14px;
+}
+
+.col1 {
+  grid-column: auto;
+}
+.col4 {
+  grid-column: auto;
+}
+.col5 {
+  grid-column: auto;
+}
+.col6 {
+  grid-column: auto;
+}
+
+.col1to2,
+.col2to3,
+.col2to4,
+.colBillingCompany,
+.colHandlingOffice,
+.colStatus,
+.colBookingOffice,
+.colCreatedBy,
+.colCreatedOn,
+.colUpdatedBy,
+.colUpdatedOn {
+  grid-column: auto;
+}
+
+.pendingRow {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.moreDetailsToggle {
+  font-size: 12px;
+  color: #007db0;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 2px 0;
+  border-top: 1px solid #cfcfcf;
+  margin-top: 4px;
+  user-select: none;
+}
+
+.moreDetailsToggle:hover {
+color: #036a92;
+}
+
+.moreDetailsSection {
+  padding-top: 6px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .row,
+  .row2 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .moreDetailsGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .row3 {
+    grid-template-columns: 1fr 1fr;
+    width: 42%;
+  }
+
+  .pendingRow {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .row,
+  .row2 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .moreDetailsGrid {
+    grid-template-columns: repeat(10, 1fr);
+  }
+
+  .col1 {
+    grid-column: 1;
+  }
+  .col4 {
+    grid-column: 4;
+  }
+  .col5 {
+    grid-column: 5;
+  }
+  .col6 {
+    grid-column: 6;
+  }
+
+  .col1to2 {
+    grid-column: 1 / span 2;
+  }
+  .col2to3 {
+    grid-column: 2 / span 2;
+  }
+
+  .col2to4 {
+    grid-column: 2 / span 4;
+    display: flex;
+    gap: 11px;
+  }
+
+  .colBillingCompany,
+  .colHandlingOffice,
+  .colStatus,
+  .colBookingOffice {
+    grid-column: span 2;
+  }
+
+  .colCreatedBy,
+  .colCreatedOn {
+    grid-column: span 1;
+  }
+
+  .colUpdatedBy,
+  .colUpdatedOn {
+    grid-column: span 2;
+  }
+}
+
+.cmnRow{ display: flex;
+    flex-wrap: wrap;
+    
+    margin: 0px -4px;}
+.cmnColumn{  width: calc(16.66% - 8px);
+    margin: 0px 4px;}
+
+
+
+.cmnRowInner{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cmnRowInner > div {
+    margin-right: 8px;
+}
+
+.cmnRow > div:first-child {
+    width: calc(100% - 8px) !important;
+}
+
+.cmnRow > div:first-child {
+ width: calc(33.33% - 8px) !important;
+    display: flex;
+    flex-direction: inherit;
+}
+
+.TruckQuoteNumber {
+    width: calc(100% - 224px);
+    margin-right: 10px;
+    margin-top: 4px;
+}
+
+.shipmentConfirm{
+   margin-top: 7px;
+}

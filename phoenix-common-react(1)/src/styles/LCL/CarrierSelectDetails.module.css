@@ -1,0 +1,342 @@
+.actionBar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+  padding: 6px 4px 8px 4px;
+}
+
+.accordionWrapper {
+  overflow-y: auto;
+  flex: 1;
+}
+
+.accordionSection {
+  margin-bottom: 6px;
+}
+
+.accordionBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0095d4;
+  color: #ffffff;
+  padding: 4px 10px;
+  cursor: pointer;
+  border-radius: 4px 4px 0 0;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  user-select: none;
+}
+
+.accordionBarTitle {
+  flex: 1;
+}
+
+.accordionToggle {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  font-size: 16px;
+}
+
+.accordionContent {
+  display: block;
+  background: #ffffff;
+}
+
+.accordionContentHidden {
+  display: none;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.fieldLabel {
+  font-size: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #444;
+  margin-bottom: 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 14px;
+}
+
+.fieldValue {
+  height: 22px;
+  border: 1px solid #999;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 4px;
+  box-sizing: border-box;
+  gap: 2px;
+}
+
+.fieldValueRequired {
+  border-color: #d70000;
+}
+
+.fieldValueMultiline {
+  height: auto;
+  min-height: 38px;
+  align-items: flex-start;
+  padding: 3px 4px;
+}
+
+.fieldText {
+  flex: 1;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 20px;
+}
+
+.fieldTextMultiline {
+  white-space: pre-wrap;
+  overflow: visible;
+  line-height: 1.4;
+}
+
+.editIconBtn {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  margin-top: 17px;
+  margin-left: 8px;
+  margin-right: 8px;
+  align-self: start;
+}
+
+.editIconBtnEdit {
+  background-image: url('../../assets/icon-racedithover.png');
+}
+
+.editIconBtnSave {
+  background-image: url('../../assets/icon-racsavehover.png');
+}
+
+.fieldInput {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  padding: 0 2px;
+  height: 20px;
+  box-sizing: border-box;
+  line-height: 20px;
+}
+
+.fieldInputMultiline {
+  height: auto;
+  min-height: 32px;
+  resize: none;
+  line-height: 1.4;
+  padding: 2px;
+}
+
+.mainDetailsWrapper {
+  padding: 6px 8px 8px;
+}
+
+.topRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.locationGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.common_booking_form_label {
+  margin-bottom: -1px;
+  float: left;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  font-size: 13px;
+  display: block;
+  white-space: nowrap;
+  margin-top: 3px;
+}
+
+.topRowTitle {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 3px 6px 2px;
+}
+
+.locationFields {
+  padding: 0 6px 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.locationRow {
+  display: grid;
+  grid-template-columns: 3fr 38px 2fr;
+  gap: 4px 2px;
+  align-items: start;
+}
+
+.contactGroup {
+  display: grid;
+  grid-template-columns: 3fr 38px 2fr 0px;
+  gap: 4px 2px;
+  align-items: start;
+  min-width: 0;
+}
+
+.pickupGroup {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 6px;
+  align-items: start;
+  min-width: 0;
+}
+
+.accessorialsLabel {
+  font-weight: bold;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #444;
+  min-height: 14px;
+  margin-bottom: 2px;
+  padding-left: 0;
+}
+
+.accessorialsValue {
+  height: 22px;
+  border: 1px solid #999;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 4px;
+  box-sizing: border-box;
+}
+
+.cargoWrapper {
+  padding: 6px 8px 8px;
+  overflow-x: auto;
+}
+
+.formTable {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: separate;
+  margin-bottom: 6px;
+}
+
+.hazardousTable {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: separate;
+  background-color: #ffe7d7;
+  border-bottom: 1px solid #ffd0b0;
+  margin-bottom: 6px;
+}
+
+.tdFirst {
+  border-right: 1px solid #d7d7d7;
+  padding-right: 10px;
+  vertical-align: top;
+  text-align: left;
+}
+
+.tdMiddle {
+  border-right: 1px solid #d7d7d7;
+  padding-right: 10px;
+  padding-left: 10px;
+  vertical-align: top;
+  text-align: left;
+}
+
+.tdLast {
+  padding-left: 10px;
+  vertical-align: top;
+  text-align: left;
+}
+
+.colHeader {
+  display: block;
+  font-weight: bold;
+  color: #525252;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 1px solid #d7d7d7;
+  width: 100%;
+  padding-bottom: 2px;
+  margin-bottom: 2px;
+}
+
+.colContent {
+  display: block;
+  color: #333;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  min-height: 15px;
+}
+
+.withLine {
+  border-bottom: 1px solid #d7d7d7;
+}
+
+.pricingCell {
+  text-align: left;
+}
+
+.pricingValueCell {
+  text-align: right;
+}
+
+.selectBtnWrapper {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 2px;
+  flex-shrink: 0;
+}
+
+.validationNotification {
+  background-color: #fff8e1;
+  border: 1px solid #ffe082;
+  border-left: 4px solid #f9a825;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #5d4037;
+  flex-shrink: 0;
+}
+
+.validationMessage {
+  margin: 1px 0;
+  line-height: 1.5;
+}

@@ -1,0 +1,402 @@
+.cargoRowSelectWrap {
+    width: 100%;
+}
+
+.cargoRowSelectWrap :global(.MuiInputLabel-root) {
+    font-size: 13px !important;
+    color: #333 !important;
+    font-weight: 400 !important;
+    margin-bottom: 3px !important;
+}
+
+.cargoRowSelectWrap :global(.MuiOutlinedInput-root) {
+    height: 22px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666;
+    border-radius: 0;
+    background-color: #fff;
+    padding: 0 !important;
+}
+
+.cargoRowSelectWrap :global(.MuiInputBase-root) {
+    padding: 0 !important;
+}
+
+.cargoRowSelectWrap :global(.MuiOutlinedInput-root) fieldset {
+    border-color: #000 !important;
+    border-width: 1px !important;
+    border-radius: 0;
+}
+
+.cargoRowSelectWrap :global(.MuiSelect-select) {
+    padding: 0 6px !important;
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+}
+
+.cargoRowSelectWrap :global(.MuiSvgIcon-root) {
+    color: #000;
+}
+
+.cargoRowMenuPaper {
+    border-radius: 0;
+    border: 1px solid #a0a0a0;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    margin-top: 1px;
+}
+
+.cargoRowMenuPaper :global(.MuiList-root) {
+    padding: 0;
+}
+
+.cargoRowMenuPaper :global(.MuiMenuItem-root) {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    padding: 4px 8px;
+    min-height: auto;
+}
+
+.cargoRowMenuPaper :global(.MuiMenuItem-root.Mui-selected),
+.cargoRowMenuPaper :global(.MuiMenuItem-root.Mui-selected:hover),
+.cargoRowMenuPaper :global(.MuiMenuItem-root:hover) {
+    background-color: #1867c0 !important;
+    color: #fff;
+}
+
+.cargoBlock {
+    border-bottom: 1px solid #e8ecf0;
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+}
+.cargoBlock2 {
+    border-bottom: 1px solid #e8ecf0;
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+    margin-top: 6px;
+}
+.cargoRowInputWrapper {
+    display: grid;
+    grid-template-columns:
+        22%
+        10%
+        10%
+        25%
+        9%
+        9%
+        9%
+        4%;
+    gap: 6px;
+    align-items: start;
+}
+.cargoRowInputWrapper2 {
+    display: grid;
+    grid-template-columns:
+       4%
+        20.04%
+        10.74%
+        10.05%
+        27.85%
+        8.65%
+        8.65%
+        auto;
+    gap: 8px;
+    align-items: start;
+}
+.cargoRowCol {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.cargoRowCol :global(.MuiFormControl-root) {
+    width: 100%;
+}
+
+.cargoRowLabel {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    display: block;
+    white-space: nowrap;
+    padding-top: 3px;
+    margin-bottom: 2px;
+}
+
+.cargoRowColWeight {
+    gap: 2px;
+    min-width: 0;
+}
+
+.cargoRowWeightLabel {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    display: block;
+    white-space: nowrap;
+    padding-top: 2px;
+    margin-bottom: 1px;
+}
+
+.cargoRowActionsWrapper {
+    display: flex;
+    align-self: stretch;
+    flex-shrink: 0;
+    margin-left: 23%;
+}
+
+.cargoRowDimToggle {
+    margin-top: 17px !important;
+    font-size: 11px !important;
+    padding: 4px 8px !important;
+    height: 22px !important;
+    white-space: nowrap !important;
+    background: linear-gradient(to bottom, #fff 4%, #e2e2e2 100%) !important;
+    border: 1px solid #c2c4c9 !important;
+    color: #333 !important;
+    box-shadow: none !important;
+    text-transform: none !important;
+    min-width: unset !important;
+}
+
+.cargoRowDimToggle:global(.MuiButtonBase-root:not(:disabled)) {
+    background: linear-gradient(to bottom, #fff 4%, #e2e2e2 100%);
+}
+
+.cargoRowDimToggle.active,
+.cargoRowDimToggle[class*="buttonActive"] {
+    background: linear-gradient(to bottom, #ecf9e6 0, #fff 99%) !important;
+    border-color: #a6cf94 !important;
+    color: #333 !important;
+}
+
+.cargoRowDimTogglex {
+    margin-top: 17px !important;
+    font-size: 11px !important;
+    padding: 4px 8px !important;
+    height: 22px !important;
+    white-space: nowrap !important;
+    background:  linear-gradient(to bottom, #ecf9e6 0, #fff 99%) !important;
+    border:  1px solid #a6cf94;
+    color: #333 !important;
+    box-shadow: none !important;
+    text-transform: none !important;
+    min-width: unset !important;
+}
+
+.cargoRowDimTogglex:global(.MuiButtonBase-root:not(:disabled)) {
+    background: linear-gradient(to bottom, #fff 4%, #e2e2e2 100%);
+}
+
+.cargoRowDimTogglex.active,
+.cargoRowDimTogglex [class*="buttonActive"] {
+    background: linear-gradient(to bottom, #ecf9e6 0, #fff 99%) !important;
+    border-color: #a6cf94 !important;
+    color: #333 !important;
+}
+
+
+.cargoRowActionsBox {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    height: 100%;
+    align-items: stretch;
+}
+
+.cargoRowActionBtn {
+    width: 22px;
+    height: 100%;
+    background: linear-gradient(#f5f5f5, #e6e6e6);
+    color: #2b88c5;
+    border: 1px solid #c8c8c8;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 0;
+    line-height: 1;
+    font-weight: bolder;
+    box-shadow: inset 0 1px 0 #ffffff;
+}
+
+.cargoRowActionBtn:hover {
+    background: linear-gradient(#ffffff, #eaeaea);
+    border-color: #bdbdbd;
+    color: #106ebe;
+}
+
+.cargoRowActionBtn:active {
+    background: linear-gradient(#e0e0e0, #f5f5f5);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.cargoRowActionBtn:global(.MuiButtonBase-root) {
+    min-width: unset;
+    padding: 0;
+    text-transform: none;
+}
+
+.cargoRowActionDivider {
+    display: none;
+}
+
+.cargoRowCol :global(.MuiOutlinedInput-root) {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    height: 22px;
+    border-radius: 0;
+    background-color: #fff;
+    padding: 0 !important;
+}
+
+.cargoRowCol :global(.MuiInputBase-root) {
+    padding: 0 !important;
+}
+
+.cargoRowCol :global(.MuiOutlinedInput-root) input {
+    padding: 0 6px !important;
+    height: 22px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    line-height: 22px;
+}
+
+.cargoRowCol :global(.MuiOutlinedInput-root) fieldset {
+    border-color: #999 !important;
+    box-shadow: inset 1px 1px 1px #DDD;
+}
+
+.cargoRowCol input[type="number"]::-webkit-outer-spin-button,
+.cargoRowCol input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.cargoRowCol input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.cargoRowColMarks :global(.MuiOutlinedInput-root),
+.cargoRowColDesc :global(.MuiOutlinedInput-root) {
+    color: #666;
+    align-items: flex-start;
+    height: 69px !important;
+    padding: 0 !important;
+}
+
+.cargoRowColMarks :global(.MuiInputBase-root),
+.cargoRowColDesc :global(.MuiInputBase-root) {
+    padding: 0 !important;
+}
+
+.cargoRowColMarks :global(.MuiOutlinedInput-root) textarea,
+.cargoRowColDesc :global(.MuiOutlinedInput-root) textarea {
+    overflow: auto !important;
+    resize: none;
+}
+
+.cargoRowColMarks :global(.MuiOutlinedInput-root) fieldset,
+.cargoRowColDesc :global(.MuiOutlinedInput-root) fieldset {
+    /* border-color: #D70000 !important; */
+    box-shadow: none;
+}
+
+.cargoRowColDeliveryId {
+    display: flex;
+    flex-direction: column;
+    min-width: 52px;
+    max-width: 60px;
+    flex-shrink: 0;
+    padding: 4px 6px 0;
+}
+
+.cargoRowDeliveryIdValue {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    font-weight: 600;
+    padding-top: 4px;
+}
+
+.cargoRowColPieces :global(.MuiOutlinedInput-root) fieldset,
+.cargoRowColWeight :global(.MuiOutlinedInput-root) fieldset {
+    border-width: 1px !important;
+    box-shadow: none;
+}
+
+.cargoRowColHsCode {
+    width: 130px;
+}
+
+.dialogBtn {
+    padding: 8px 24px;
+    font-size: 13px;
+    background: linear-gradient(to bottom, #0078d7 0%, #0060a3 100%);
+    color: #ffffff;
+    border: 1px solid #004578;
+    border-radius: 4px;
+    font-weight: 600;
+    min-width: unset;
+    text-transform: none;
+}
+.dialogBtn:hover {
+    background: linear-gradient(to bottom, #0066b8 0%, #004a8a 100%);
+}
+
+.warningModalBody {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    background: #fffacd;
+    border-radius: 15px;
+    margin: 15px;
+    padding: 16px;
+    border: 1px solid #f0e68c;
+}
+.warningModalIcon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    background: #ffa500;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 1;
+}
+.warningModalText {
+    font-size: 14px;
+    color: #333333;
+    font-weight: 500;
+    line-height: 1.5;
+    flex: 1;
+    padding-top: 2px;
+}
+.warningModalActions {
+    display: flex;
+    gap: 10px;
+    padding: 12px 16px;
+}
+
+.sensitiveDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 6px;
+}
+
+.fieldGroupDisabled {
+    pointer-events: none;
+    /*opacity: 0.5;*/
+}

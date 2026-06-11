@@ -1,0 +1,301 @@
+/* Routing Details Container */
+.routing-details-container {
+  width: 100%;
+  /* max-width: 1600px; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  border: 1px solid #b0b0b0;
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 0.375rem;
+  overflow: hidden;
+}
+
+/* .routing-details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  padding: 3px 8px;
+  background: linear-gradient(to bottom, #0088ef, #006abf);
+} */
+
+/* .routing-details-title {
+  font-size: 11px;
+  font-weight: 700;
+  margin: 0;
+  color: #ffffff;
+} */
+
+.routingDivider {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 5px 0 5px 0;
+}
+
+/* Enterprise MUI overrides — applied via .enterprise-form wrapper class */
+.enterprise-form {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.enterprise-form .MuiInputBase-root {
+  height: 26px;
+  background-color: white !important;
+  border-radius: 1px !important;
+  font-size: 12px !important;
+  box-shadow:
+    inset 1px 1px 3px rgba(0, 0, 0, 0.3),
+    inset -1px -1px 1px rgba(255, 255, 255, 0.7);
+  width: 100% !important;
+}
+
+.enterprise-form .MuiInputBase-root.Mui-disabled {
+  background-color: #f5f5f5 !important;
+}
+
+.enterprise-form .MuiOutlinedInput-input {
+  padding: 0 4px;
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 11px;
+}
+
+.enterprise-form .MuiSelect-select {
+  padding: 0 20px 0 4px !important;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 11px;
+}
+
+.enterprise-form .MuiInputLabel-root {
+  font-size: 13px;
+  color: #333;
+  margin-bottom: 1px;
+  line-height: 1.1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.enterprise-form .MuiOutlinedInput-notchedOutline {
+  border-color: #b0b0b0;
+  border-width: 1px;
+  border-radius: 2px;
+}
+
+.enterprise-form .Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #007fe1;
+  border-width: 1px;
+}
+
+.enterprise-form .MuiPickersInputBase-root,
+.enterprise-form .MuiPickersOutlinedInput-root {
+  height: 26px !important;
+  min-height: 26px !important;
+  font-size: 13px !important;
+  display: flex !important;
+  align-items: center !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  box-shadow:
+    inset 1px 1px 3px rgba(0, 0, 0, 0.3),
+    inset -1px -1px 1px rgba(255, 255, 255, 0.7);
+}
+
+.enterprise-form .MuiPickersInputBase-root .MuiPickersInputBase-input {
+  padding: 0 4px !important;
+  font-size: 13px !important;
+  height: 26px !important;
+  line-height: 26px !important;
+  box-sizing: border-box;
+}
+
+.enterprise-form .MuiInputAdornment-root {
+  height: 26px !important;
+  display: flex !important;
+  align-items: center !important;
+  margin: 0 !important;
+}
+
+.enterprise-form .MuiInputAdornment-root .MuiSvgIcon-root {
+  font-size: 16px !important;
+}
+
+/* Utility classes to replace inline sx in RoutingDetails components */
+.pad4x8 { padding: 4px 8px; }
+.searchWrap { position: relative; }
+.colSpan1 { grid-column: span 1; }
+.colSpan2 { grid-column: span 2; }
+.colSpan3 { grid-column: span 3; }
+.colSpan4 { grid-column: span 4; }
+.colSpan6 { grid-column: span 6; }
+.colSpan7 { grid-column: span 7; }
+.colSpan8 { grid-column: span 8; }
+.colSpan9 { grid-column: span 9; }
+.colSpan10 { grid-column: span 10; }
+.colSpan11 { grid-column: span 11; }
+.colSpan14 { grid-column: span 14; }
+.colSpan24 { grid-column: span 24; }
+.ml40 { margin-left: 40px; }
+.mr40 { margin-right: 40px; }
+.mr20 { margin-right: 20px; }
+.mlNeg25 { margin-left: -25px; }
+.mlNeg48 { margin-left: -48px; }
+.ml10 {margin-left: 10%; }
+.mlNeg21 {margin-left: -21%; }
+.ml30 { margin-left: 30px; }
+.mb4_font12_bold { margin-bottom: 4px; font-size: 13px; font-weight: 500; }
+.pb4_flex_center { padding-bottom: 4px; display: flex; align-items: center; }
+.flex { display: flex; }
+.flex_align_center { display:flex; align-items: center; }
+.flex_align_end { display:flex; align-items: flex-end; }
+.flex_gap_4 { gap: 4px; }
+.flex_gap_8 { gap: 8px; }
+.flex_gap_2 { gap: 2px; }
+.grid_gap_8 { display: grid; gap: 8px; }
+.p1_font_arial { padding: 1px; font-family: Arial, Helvetica, sans-serif; }
+.panelBox { mx: 5px; }
+.panelBoxInner { border: 1px solid #d7d7d7; background: #f9f9f9; padding: 1px; padding-top: 0; margin: -8px 5px 0 5px; }
+.buttonSmall { min-width: 70px; height: 25px; border-radius: 3px; font-size: 14px; }
+/* .minW0_h18_br2 {  height: 32px !important ; } */
+.fontWeight600 { font-weight: 600; }
+.pl5 { padding-left: 5px; }
+.pr05 { padding-right: 0.5px; }
+.cursorPointer { cursor: pointer; }
+.borderLeftGray { border-left: 1px solid #d7d7d7; }
+.borderLeftWhite { border-left: 1px solid white; }
+
+/* Additional component-specific utilities */
+.searchIcon { position: absolute; right: 4px; top: 23px; width: 16px; height: 16px; display: flex; align-items: center; justify-content: center; }
+.searchIconFCL { position: absolute; right: 0%; bottom: 0; width: 16px; height: 16px; display: flex; align-items: center; justify-content: center;}
+.editBtn { width: 20px; height: 20px; border: 1px solid #b0b0b0; border-radius: 2px; padding: 0; }
+.editBtn:hover { background-color: #e8e8e8; }
+.editBtnCell { grid-column: span 1; display: flex; align-items: flex-end; padding-bottom: 2px; }
+.textField { height: 20px; }
+.grid24 {
+  display: grid;
+  grid-template-columns: repeat(24, minmax(0, 1fr));
+  column-gap: 8px;
+  row-gap: 2px;
+  margin-bottom: 10px;
+  align-items: end;
+}
+.actionBtn { width: 20px; height: 20px; font-size: 24px; border: 1px solid #b0b0b0; border-radius: 2px; padding: 0; color: #2d92cd; }
+.actionBtn:disabled { color: #bbb; border-color: #ddd; }
+.toggleBtn { background: none; border: none; color: #007fe1; font-weight: 700; font-size: 11px; cursor: pointer; padding: 2px 0; display: flex; align-items: center; gap: 4px; font-family: Arial, Helvetica, sans-serif; }
+.w260 { width: 260px; }
+.mb2 { margin-bottom: 2px; }
+.mb4 { margin-bottom: 4px; }
+
+/* Button size variants */
+.minW0_h14_br2 { min-width: 0 ; height: 22px ; border-radius: 2px ; background-color: linear-gradient(to bottom, #dceff6 15%, #3187b6 50%, #7abcdf 100%) !important;}
+.buttonSmallEnd { min-width: 70px !important; height: 25px !important; border-radius: 3px !important; font-size: 14px !important; align-self: flex-end; }
+.btnPickupAction { min-width: 0 !important; height: 20px !important; border-radius: 2px !important; font-size: 11px !important; padding: 0 8px !important; line-height: 18px !important; background: linear-gradient(to bottom, #dceff6 15%, #3187b6 50%, #7abcdf 100%) !important; }
+.btnPickupCancel { background: linear-gradient(to bottom, #dceff6 15%, #3187b6 50%, #7abcdf 100%) !important; border-color: #154360 !important; }
+
+/* Pickup modal header control layout */
+.pickupCtrlRow { display: flex; gap: 4px; }
+.pickupAddRow { display: flex; gap: 8px; }
+.pickupRemoveRow { display: grid; gap: 8px; }
+
+/* Collapse toggle inside first pickup modal */
+.pickupCollapseCtrl { display: grid; gap: 8px; padding: 0 2px; cursor: pointer; }
+.pickupCollapseCtrlCollapsed { border-left: 1px solid #d7d7d7; }
+.pickupCollapseCtrlExpanded { border-left: 1px solid #ffffff; }
+
+/* Warning modal content */
+.warningContent { padding: 8px; font-family: Arial, Helvetica, sans-serif; }
+
+/* Expand/collapse toggle image */
+.collapseImg { width: 15px; height: 15px; cursor: pointer; margin: 6px 4px 0 4px; }
+
+.searchImg {
+  position: absolute;
+  right: 6px;
+  bottom: 5px;
+  cursor: pointer;
+  width: 12px;
+  height: 12px;
+}
+
+.editBtnActive {
+  background-color: #e0f0ff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(24, minmax(0, 1fr));
+  column-gap: 8px;
+  row-gap: 2px;
+  margin-bottom: 10px;
+  align-items: end;
+}
+
+.flex1 {
+  flex: 1;
+}
+.gap2 { gap: 2px; }
+.gridColsFour {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+}
+
+/* Panel headers used in pickup/door-delivery modals */
+.panelHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px 6px 0 0;
+  height: 26px;
+}
+.panelHeaderCollapsed {
+  background-color: white;
+  border: 1px solid #d7d7d7;
+}
+.panelHeaderExpanded {
+  background-color: #0097d6;
+  border: none;
+}
+.panelHeaderTitle {
+  font-weight: 600;
+  font-size: 13px;
+  padding-left: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.panelHeaderTitleCollapsed { color: #0097d6; }
+.panelHeaderTitleExpanded { color: #ffffff; }
+
+/* Modal container helpers */
+.modalColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* approx theme spacing 1 */
+  margin-top: 6px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.modalColumnNoX {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.mx5 { margin-left: 5px; margin-right: 5px; }
+.modalActions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+  margin-bottom: 12px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.dividerNoMargin { margin-top: 0; margin-bottom: 0; }
+
+/* small utility for pb + center align */
+.pb4_flex_center { padding-bottom: 4px; display: flex; align-items: center; }
+
+

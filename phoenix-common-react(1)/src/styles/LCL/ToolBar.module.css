@@ -1,0 +1,298 @@
+.image {
+  width: var(--image-size, 18px);
+  height: var(--image-size, 18px);
+  object-fit: contain;
+}
+
+.imageIcon {
+  display: inline-block;
+}
+
+.toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: linear-gradient(to bottom, #ffffff 0%, #fafafa 95%, #cccccc 100%);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 50px;
+  /* padding: 0 16px; */
+  /* border-bottom: 6px solid; */
+  border-image: linear-gradient(to bottom, #e4e9ed, #c8d1da) 1;
+  gap: 8px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.toolbarButton {
+  height: 31px;
+  min-width: 55px;
+  padding: 0 8px !important;
+  color: #fff !important;
+  background: linear-gradient(to bottom,
+      #dceff6 0%,
+      #3187b6 50%,
+      #7abcdf 100%) !important;
+  border: 1px solid #2563a3 !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer !important;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+  white-space: nowrap;
+  text-transform: none;
+  font-size: large;
+}
+
+.toolbarButton:hover:not(:disabled) {
+  background: linear-gradient(to bottom,
+      #dceff6 15%,
+      #3187b6 50%,
+      #7abcdf 100%) !important;
+}
+
+.toolbarButton:disabled {
+  opacity: 0.6 !important;
+  cursor: not-allowed !important;
+}
+
+/* Notes Button */
+.notesButton {
+  width: 75px;
+}
+
+/* Documents Button */
+.documentsButton {
+  width: 110px;
+}
+
+/* Icon-only buttons */
+.svgIconButton {
+  width: 32px;
+  height: 31px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.svgIconButton img {
+  width: 32px;
+  height: 31px;
+  display: block;
+  object-fit: fill;
+}
+
+/* Action buttons sizing */
+.closeAllButton {
+  width: 75px;
+}
+
+.clearAllButton {
+  width: 75px;
+}
+
+.previewButton {
+  width: 65px;
+}
+
+.saveButton {
+  width: 70px;
+}
+
+.eDocsButton {
+  width: 75px;
+}
+
+/* TMS Tracking Button */
+.tmsTrackingButton {
+  min-width: 140px;
+}
+
+.tmsTrackingButtonActive {
+  border: 1px solid #3793c5 !important;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* ─────────────────── BUTTON GROUPS ─────────────────── */
+.buttonGroup {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.leftGroup {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.iconGrouping {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.actionButtons {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 0;
+  flex-shrink: 0;
+}
+
+.selectWrapper {
+  display: inline-flex;
+  align-items: center;
+  height: 30px;
+  width: 140px;
+  background: linear-gradient(to bottom, #ffffff 0%, #e8e8e8 100%);
+  border: 1px solid #adadad;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+  /* box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.08); */
+  outline: none !important;
+}
+
+.selectWrapper::before {
+  content: '';
+  position: absolute;
+  right: 26px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(to bottom, #ffffff 0%, #e8e8e8 100%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.selectWrapper::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 26px;
+  background: linear-gradient(to bottom, #e8e8e8 0%, #d0d0d0 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.selectWrapper :global(.MuiOutlinedInput-notchedOutline) {
+  border: none !important;
+}
+
+.selectWrapper :global(.MuiSelect-icon) {
+  right: 0;
+  width: 26px;
+  height: 86%;
+  top: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  background: linear-gradient(to bottom, #ffffff 0%, #e8e8e8 100%);
+  color: #000;
+  pointer-events: none;
+}
+
+.selectWrapper :global(.MuiOutlinedInput-root) {
+  background: transparent !important;
+  padding: 0 !important;
+  height: 100% !important;
+}
+
+.selectWrapper :global(.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline),
+.selectWrapper :global(.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline) {
+  border: none !important;
+  outline: none !important;
+}
+
+.selectMenuItemStyle {
+  font-size: 12px !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+/* ─────────────────── FORM COMPLETED SECTION ─────────────────── */
+.formCompletedContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  flex-shrink: 0;
+  margin-left: 8px;
+}
+
+.formCompletedLabel {
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  white-space: nowrap;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.formCompletedProgressRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.progressBar {
+  width: 120px !important;
+  height: 10px !important;
+}
+
+.formCompletedPercentage {
+  color: #1a6fad;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.versionButton {
+  width: 75px;
+}
+
+.hideButton {
+  display: none;
+}
+
+.showButton {
+  display: block;
+}
+
+.statusBadge {
+  display: inline-block;
+  color: #000;
+  vertical-align: middle;
+  padding: 5px;
+  text-align: center;
+  background-color: #ff0;
+  border-radius: 5px;
+  font-size: 13px;
+  line-height: 18px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* eService changed field highlight */
+:global(.eservice-changed) input,
+:global(.eservice-changed) textarea {
+  background-color: yellow !important;
+}

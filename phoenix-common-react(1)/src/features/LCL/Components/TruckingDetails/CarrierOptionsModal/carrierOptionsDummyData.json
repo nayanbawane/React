@@ -1,0 +1,260 @@
+{
+  "tmsOrderMainBean": {
+    "pickupLocationCode": "ATLW",
+    "pickupZipCode": "30337",
+    "deliverToLocationCode": "NYCW",
+    "deliverToZipCode": "07201",
+    "pickupAccessorial": [],
+    "deliverToAccessorial": [],
+    "alternateGateway": "",
+    "zipCode": "",
+    "shipmentType": "LTL",
+    "trailerType": ""
+  },
+  "getRateQuoteResult": [
+    {
+      "carrierName": "FORWARD AIR, INC.",
+      "carrierSCAC": "FWDA",
+      "serviceLevel": "Standard",
+      "transitTime": 2,
+      "newLiabilityCoverage": 0.00,
+      "usedLiabilityCoverage": 0.00,
+      "priceLineHaul": 186.30,
+      "priceFuelSurcharge": 44.71,
+      "priceTotal": 276.01,
+      "tsaCompliance": "TSA Compliant",
+      "pricingInstructions": "Requires approval for hazmat. Will not move totes, alcohol, or unpalletized cargo. Does not service Amazon facilities. Shipments picked up or delivered to a grocery warehouse or beverage location are subject to an additional charge. For personal effects, use the recommended class.",
+      "tariffDescription": "",
+      "errorMessage": "",
+      "priceAccessorials": [
+        {
+          "accessorialCode": "APPT",
+          "accessorialPrice": 45.00,
+          "description": "Appointment"
+        }
+      ]
+    },
+    {
+      "carrierName": "ESTES",
+      "carrierSCAC": "EXLA",
+      "serviceLevel": "Standard",
+      "transitTime": 2,
+      "newLiabilityCoverage": 0.00,
+      "usedLiabilityCoverage": 0.00,
+      "priceLineHaul": 207.00,
+      "priceFuelSurcharge": 99.57,
+      "priceTotal": 381.57,
+      "tsaCompliance": "TSA Compliant",
+      "pricingInstructions": "Shipco must verify shipments that are over 20' or single piece over 4,000lbs with the local terminal. Carrier delivers to Amazon. When a shipment has one or more handling units of 96 inches or more in length extra labor is required. The charge therefore will be: 96 inches or greater and weight per handling unit is less than 500 lbs - $ 55.00 per shipment 96 inches but not exceeding 144 inches and weight per handling unit is equal to or greater than 500 lbs - $ 90.00 per shipment 144 inches or greater and weight per handling unit.",
+      "tariffDescription": "",
+      "errorMessage": "",
+      "priceAccessorials": [
+        {
+          "accessorialCode": "RES",
+          "accessorialPrice": 75.00,
+          "description": "Residential"
+        }
+      ]
+    },
+    {
+      "carrierName": "ESTES",
+      "carrierSCAC": "EXLA",
+      "serviceLevel": "Guaranteed 5PM",
+      "transitTime": 2,
+      "newLiabilityCoverage": 0.00,
+      "usedLiabilityCoverage": 0.00,
+      "priceLineHaul": 207.00,
+      "priceFuelSurcharge": 99.57,
+      "priceTotal": 541.57,
+      "tsaCompliance": "TSA Compliant",
+      "pricingInstructions": "Guaranteed PM Delivery. Shipco must verify shipments that are over 20' or single piece over 4,000lbs with the local terminal. Carrier delivers to Amazon. When a shipment has one or more handling units of 96 inches or more in length extra labor is required. The charge therefore will be: 96 inches or greater and weight per handling unit is less than 500 lbs - $ 55.00 per shipment 96 inches but not exceeding 144 inches and weight per handling unit is equal to or greater than 500 lbs - $ 90.00 per shipment 144 inches or greater and weight per handling unit.",
+      "tariffDescription": "",
+      "errorMessage": "",
+      "priceAccessorials": [
+        {
+          "accessorialCode": "RES",
+          "accessorialPrice": 235.00,
+          "description": "Residential"
+        }
+      ]
+    },
+    {
+      "carrierName": "SAIA",
+      "carrierSCAC": "SAIA",
+      "serviceLevel": "Standard",
+      "transitTime": 2,
+      "newLiabilityCoverage": 0.00,
+      "usedLiabilityCoverage": 0.00,
+      "priceLineHaul": 234.60,
+      "priceFuelSurcharge": 56.30,
+      "priceTotal": 540.90,
+      "tsaCompliance": "",
+      "pricingInstructions": "Incorrect or Missing Dims may incur additional charges. Additional services requested at stops, and accepted by carrier, will also incur additional charges.",
+      "tariffDescription": "",
+      "errorMessage": "",
+      "priceAccessorials": [
+        {
+          "accessorialCode": "RES",
+          "accessorialPrice": 250.00,
+          "description": "Residential"
+        }
+      ]
+    },
+    {
+      "carrierName": "FXNL",
+      "carrierSCAC": "FXNL",
+      "serviceLevel": "Guaranteed Noon",
+      "transitTime": 2,
+      "newLiabilityCoverage": 0.00,
+      "usedLiabilityCoverage": 0.00,
+      "priceLineHaul": 207.00,
+      "priceFuelSurcharge": 99.57,
+      "priceTotal": 581.57,
+      "tsaCompliance": "TSA Compliant",
+      "pricingInstructions": "Guaranteed NOON Delivery. Shipco must verify shipments that are over 20' or single piece over 4,000lbs with the local terminal.",
+      "tariffDescription": "",
+      "errorMessage": "",
+      "priceAccessorials": [
+        {
+          "accessorialCode": "RES",
+          "accessorialPrice": 275.00,
+          "description": "Residential"
+        }
+      ]
+    },
+    {
+      "carrierName": "EXLA",
+      "carrierSCAC": "EXLA",
+      "serviceLevel": "Standard",
+      "transitTime": 3,
+      "newLiabilityCoverage": 0.00,
+      "usedLiabilityCoverage": 0.00,
+      "priceLineHaul": 198.50,
+      "priceFuelSurcharge": 62.30,
+      "priceTotal": 345.80,
+      "tsaCompliance": "",
+      "pricingInstructions": "",
+      "tariffDescription": "",
+      "errorMessage": "",
+      "priceAccessorials": [
+        {
+          "accessorialCode": "RES",
+          "accessorialPrice": 85.00,
+          "description": "Residential"
+        }
+      ]
+    },
+    {
+      "carrierName": "CNWY",
+      "carrierSCAC": "CNWY",
+      "serviceLevel": "Standard",
+      "transitTime": 3,
+      "newLiabilityCoverage": 0.00,
+      "usedLiabilityCoverage": 0.00,
+      "priceLineHaul": 221.00,
+      "priceFuelSurcharge": 71.40,
+      "priceTotal": 387.40,
+      "tsaCompliance": "",
+      "pricingInstructions": "",
+      "tariffDescription": "",
+      "errorMessage": "",
+      "priceAccessorials": [
+        {
+          "accessorialCode": "RES",
+          "accessorialPrice": 95.00,
+          "description": "Residential"
+        }
+      ]
+    }
+  ],
+  "ltlPickupAccessorials": [
+    {
+      "accessorialCode": "APPT",
+      "description": "Appointment"
+    },
+    {
+      "accessorialCode": "HAZMAT",
+      "description": "Hazardous Material"
+    },
+    {
+      "accessorialCode": "LFG",
+      "description": "Liftgate"
+    },
+    {
+      "accessorialCode": "RES",
+      "description": "Residential"
+    }
+  ],
+  "tlPickupAccessorials": [
+    {
+      "accessorialCode": "APPT",
+      "description": "Appointment"
+    },
+    {
+      "accessorialCode": "HAZMAT",
+      "description": "Hazardous Material"
+    }
+  ],
+  "ltlDeliveryAccessorials": [
+    {
+      "accessorialCode": "APPT",
+      "description": "Appointment"
+    },
+    {
+      "accessorialCode": "HAZMAT",
+      "description": "Hazardous Material"
+    },
+    {
+      "accessorialCode": "LFG",
+      "description": "Liftgate"
+    },
+    {
+      "accessorialCode": "RES",
+      "description": "Residential"
+    }
+  ],
+  "tlDeliveryAccessorials": [
+    {
+      "accessorialCode": "APPT",
+      "description": "Appointment"
+    },
+    {
+      "accessorialCode": "HAZMAT",
+      "description": "Hazardous Material"
+    }
+  ],
+  "alternateGatewayOptions": [
+    {
+      "value": "",
+      "label": "Please Select"
+    }
+  ],
+  "shipmentTypeOptions": [
+    {
+      "value": "LTL",
+      "label": "LTL"
+    },
+    {
+      "value": "TRUCKLOAD",
+      "label": "Truckload"
+    }
+  ],
+  "trailerTypeOptions": [
+    {
+      "value": "",
+      "label": "Please Select"
+    },
+    {
+      "value": "DRY_VAN",
+      "label": "Dry Van"
+    },
+    {
+      "value": "REEFER",
+      "label": "Reefer"
+    },
+    {
+      "value": "FLATBED",
+      "label": "Flatbed"
+    }
+  ]
+}

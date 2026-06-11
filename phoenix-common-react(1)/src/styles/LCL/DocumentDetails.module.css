@@ -1,0 +1,20 @@
+.tableRow {
+  height: 28px;
+}
+
+.flexContainer {
+  display: flex;
+  gap: 6px;
+}
+
+.flexContainerWithMargin {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 3px;
+}
+
+.iconImage {
+  height: 20px;
+  width: 20px;
+  object-fit: contain;
+}

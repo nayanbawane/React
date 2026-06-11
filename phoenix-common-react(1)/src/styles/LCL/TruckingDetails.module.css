@@ -1,0 +1,1542 @@
+:global(:root) {
+    --truck-font-family: Arial, Helvetica, sans-serif;
+    --truck-font-size-sm: 12px;
+    --truck-font-size-base: 14px;
+
+    --truck-color-text: #333333;
+    --truck-color-muted: #555555;
+    --truck-color-subtle: #666666;
+    --truck-color-primary: #0095d4;
+    --truck-color-focus: #0097d6;
+
+    --truck-border: #d7d7d7;
+    --truck-border-filter: #bdbdbd;
+    --truck-border-cell: #e8e8e8;
+
+    --truck-bg-row: #f5f5f5;
+    --truck-bg-readonly: #f5f5f5;
+    --truck-bg-input: #ffffff;
+}
+
+.wrapper {
+    margin-top: 8px;
+    font-family: var(--truck-font-family);
+}
+
+.wrapper :global([class*="accordionContentWrapper"]) {
+    overflow: visible;
+}
+
+.wrapper :global([class*="accordionContent"]) {
+    padding: 0px;
+}
+
+.container {
+    position: relative;
+    font-family: var(--truck-font-family);
+    font-size: var(--truck-font-size-sm);
+    padding: 16px 6px 6px;
+    border-right: none;
+    height: calc(100% - 10px);
+}
+
+.truckerContainer{
+     position: relative;
+    font-family: var(--truck-font-family);
+    font-size: var(--truck-font-size-sm);
+    padding: 16px 6px 6px;
+    border: 1px solid var(--truck-border);
+    border-right: none;
+    margin-top: 10px;
+    margin-left: 5px;
+    height: calc(100% - 10px);
+width: calc(100vw - 60px);
+max-width: 600px;}
+
+.title {
+    position: absolute;
+    top: -8px;
+    left: 10px;
+    background: white; 
+    padding: 0 2px;
+    font-size: var(--truck-font-size-sm);
+    color: var(--truck-color-subtle);
+    font-family: var(--truck-font-family);
+}
+
+.pickupTwoCol {
+    display: grid;
+    grid-template-columns: 1fr 500px;
+}
+
+.pickupFooter {
+    display: flex;
+    justify-content: flex-end;
+    padding: 6px 8px;
+    border-top: 1px solid var(--truck-border);
+    background-color: #f9f9f9;
+}
+
+.truckerSectionTitle {
+    font-weight: 600;
+    font-size: var(--truck-font-size-sm);
+    color: var(--truck-color-text);
+    padding: 4px 0 6px;
+    font-family: var(--truck-font-family);
+}
+
+.truckerCodeBox {
+    position: relative;
+}
+
+.truckerSearchIcon {
+    position: absolute;
+    right: 6px;
+    bottom: 5px;
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+}
+
+.dateLabel {
+    display: block;
+    font-size: var(--truck-font-size-base);
+    white-space: nowrap;
+    font-family: var(--truck-font-family);
+}
+
+.customerNameField :global(.MuiInputBase-root) {
+    height: unset;
+    align-items: flex-start;
+}
+
+.customerNameField :global(.MuiOutlinedInput-root) {
+    padding: 0 !important;
+}
+
+.customerNameField :global(.MuiOutlinedInput-root) textarea {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.customerNameField :global(.MuiOutlinedInput-root) {
+    padding: 0 !important;
+}
+
+.customerNameField :global(.MuiOutlinedInput-root) textarea {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.countryDateRow {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 16px;
+}
+
+@media (min-width: 600px) {
+    .countryDateRow {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.streetAddressRow {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding-top: 4px;
+}
+
+@media (min-width: 600px) {
+    .streetAddressRow {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.cityStateRow {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+@media (min-width: 600px) {
+    .cityStateRow {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.autoHeightField :global(.MuiInputBase-root) {
+    height: auto;
+}
+
+.autoHeightField :global(.MuiOutlinedInput-root) {
+    padding: 0 !important;
+}
+
+.autoHeightField :global(.MuiOutlinedInput-root) textarea {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.label {
+    display: block;
+    font-size: var(--truck-font-size-base);
+    white-space: nowrap;
+    font-family: var(--truck-font-family);
+}
+
+.sectionContainer {
+    position: relative;
+    font-family: var(--truck-font-family);
+    font-size: var(--truck-font-size-sm);
+    padding: 16px 6px 6px;
+    border: 1px solid var(--truck-border);
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.subLabel {
+    font-size: var(--truck-font-size-sm);
+    color: #555;
+    font-family: var(--truck-font-family);
+    padding: 4px 6px 2px;
+}
+
+.col {
+    padding: 4px 8px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.row3Col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4px;
+    margin-bottom: 2px;
+}
+
+.fieldLabel {
+    display: block;
+    font-size: var(--truck-font-size-base);
+    font-family: var(--truck-font-family);
+    white-space: nowrap;
+    line-height: 1.4;
+}
+
+.stackableRow {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.toggleGroup {
+    display: flex;
+    border: 1px solid var(--truck-border-filter);
+    border-radius: 2px;
+    overflow: hidden;
+    width: fit-content;
+    height: 22px;
+    margin-top: 2px;
+}
+
+.toggleBtn {
+    padding: 0 10px;
+    font-size: var(--truck-font-size-sm);
+    font-family: var(--truck-font-family);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: #e2e2e2;
+    color: var(--truck-color-text);
+    user-select: none;
+}
+
+.toggleBtnActive {
+    background: var(--truck-color-primary);
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.chargesSection {
+    font-family: var(--truck-font-family);
+    font-size: var(--truck-font-size-sm);
+    padding: 4px 0 0;
+}
+
+.chargesTitle {
+    font-weight: 600;
+    font-size: var(--truck-font-size-sm);
+    color: var(--truck-color-text);
+    padding: 3px 6px 5px;
+    font-family: var(--truck-font-family);
+}
+
+.fetchRatesRow {
+    display: flex;
+    justify-content: flex-end;
+    padding: 4px 0;
+}
+
+
+.td {
+    padding: 2px 4px;
+    vertical-align: middle;
+}
+
+.chargesFooter,
+.footer {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    border-bottom: 1px solid var(--truck-border);
+    border-top: 1px solid var(--truck-border);
+    margin: 16px 0px 6px 0px;
+}
+
+.footerCell {
+    padding: 4px 6px;
+}
+
+.footerCellBordered {
+    border-left: 1px solid var(--truck-border);
+}
+
+.footerLabel {
+    display: block;
+    font-weight: 600;
+    font-size: var(--truck-font-size-sm);
+    color: var(--truck-color-text);
+    font-family: var(--truck-font-family);
+}
+
+.footerAmountRow {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    margin-top: 1px;
+    border-top: 1px solid var(--truck-border);
+}
+
+.footerCurrency {
+    font-size: var(--truck-font-size-sm);
+    color: var(--truck-color-muted);
+    font-family: var(--truck-font-family);
+}
+
+.footerValue {
+    font-size: var(--truck-font-size-sm);
+    color: var(--truck-color-text);
+    font-family: var(--truck-font-family);
+}
+
+.sectionTitle {
+    font-weight: 600;
+    font-size: var(--truck-font-size-sm);
+    color: var(--truck-color-text);
+    padding: 3px 6px 5px;
+    font-family: var(--truck-font-family);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.colDesc { width: 55%; }
+.colAmt  { width: 22.5%; }
+
+.th {
+    font-size: var(--truck-font-size-sm);
+    font-weight: 600;
+    color: var(--truck-color-text);
+    text-align: left;
+    padding: 3px 5px;
+    font-family: var(--truck-font-family);
+    white-space: nowrap;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    height: 22px;
+    border: 1px solid var(--truck-border-filter);
+    font-size: var(--truck-font-size-sm);
+    font-family: var(--truck-font-family);
+    padding: 0 4px;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 0;
+    background-color: var(--truck-bg-input);
+    color: var(--truck-color-text);
+}
+
+.input:focus {
+    border-color: var(--truck-color-focus);
+}
+
+.input[readonly] {
+    background-color: var(--truck-bg-readonly);
+    color: var(--truck-color-muted);
+    cursor: default;
+}
+
+.inputRight {
+    text-align: right;
+}
+
+.amountCell {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.amountCell .input {
+    flex: 1;
+    min-width: 0;
+    width: auto;
+}
+
+.currencyLabel {
+    font-size: var(--truck-font-size-sm);
+    color: var(--truck-color-muted);
+    font-family: var(--truck-font-family);
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+
+.panelContainer {
+    position: relative;
+    font-family: var(--truck-font-family);
+    font-size: var(--truck-font-size-sm);
+    padding: 16px 6px 6px;
+    border: 1px solid var(--truck-border);
+    margin-top: 10px;
+    margin-left: 5px;
+    min-height: 580px;
+}
+
+.cargoSection {
+    border-top: 1px solid var(--truck-border);
+}
+
+.mainGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.leftCol {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.rightCol {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.row2Col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+    margin-bottom: 2px;
+}
+
+.relativeBox {
+    position: relative;
+}
+
+.searchIcon {
+    position: absolute;
+    right: 6px;
+    bottom: 5px;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}
+
+.dateTimeRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    align-items: flex-start;
+}
+
+.timeRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3px;
+}
+
+.cargoToggle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    color: var(--truck-color-focus);
+    font-size: var(--truck-font-size-sm);
+    font-family: var(--truck-font-family);
+    margin-top: 8px;
+    padding: 2px 0;
+    user-select: none;
+    border-bottom: 1px solid var(--truck-border);
+}
+
+.cargoArrow {
+    font-size: 10px;
+}
+
+.orgSearchContent {
+    background-color: #e9f6fe;
+}
+
+
+
+.modalWrapper {
+    font-family: var(--truck-font-family);
+    font-size: var(--truck-font-size-sm);
+    display: flex;
+    flex-direction: column;
+    padding: 0 6px;
+}
+
+.openAllRow {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 8px;
+    background-color: #0095d4;
+    margin-bottom: 4px;
+}
+
+.sectionHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, #01a5ec 0%, #0191ce 50%, #007db0 100%);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: var(--truck-font-size-sm);
+    padding: 0 8px;
+    height: 26px;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 0;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+.sectionHeaderCollapsed {
+    border: 1px solid #d7d7d7;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    background: -webkit-linear-gradient(top, #ffffff 0%, #f0f0f0 100%);
+    overflow: hidden !important;
+    height: 26px;
+    color: #000;
+}
+.toggleIcon {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+    width: 12px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.mainDetailsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 1px solid var(--truck-border);
+    border-top: none;
+    background-color: #f9f9f9;
+    margin-bottom: 4px;
+}
+
+.detailsPanel {
+    padding: 8px 5px;
+}
+
+.detailsPanelBordered {
+    /* border-left: 1px solid var(--truck-border); */
+}
+
+.panelTitle {
+    font-weight: 600;
+    font-size: var(--truck-font-size-sm);
+    color: var(--truck-color-text);
+    padding-bottom: 6px;
+    font-family: var(--truck-font-family);
+}
+
+.panelFields {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.readonlyField {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.readonlyLabel {
+    font-size: var(--truck-font-size-sm);
+    color: var(--truck-color-muted);
+    font-family: var(--truck-font-family);
+}
+
+.readonlyInput {
+    width: 100%;
+    height: 22px;
+    border: 1px solid var(--truck-border);
+    background-color: var(--truck-bg-readonly);
+    color: var(--truck-color-text);
+    font-size: var(--truck-font-size-sm);
+    font-family: var(--truck-font-family);
+    padding: 0 6px;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 0;
+    cursor: default;
+}
+
+.editableInput {
+    width: 100%;
+    height: 22px;
+    border: 1px solid var(--truck-border-filter);
+    background-color: var(--truck-bg-input);
+    color: var(--truck-color-text);
+    font-size: var(--truck-font-size-sm);
+    font-family: var(--truck-font-family);
+    padding: 0 6px;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 0;
+    cursor: text;
+}
+
+.optionsRow {
+    display: flex;
+    gap: 16px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding-top: 4px;
+}
+
+.optionLabel {
+    font-size: var(--truck-font-size-sm);
+    color: var(--truck-color-text);
+    font-family: var(--truck-font-family);
+    margin-bottom: 3px;
+}
+
+.modalToggleGroup {
+    display: flex;
+    border: 1px solid var(--truck-border-filter);
+    overflow: hidden;
+    width: fit-content;
+}
+
+.modalToggleBtn {
+    padding: 0 12px;
+    font-size: var(--truck-font-size-sm);
+    font-family: var(--truck-font-family);
+    border: none;
+    cursor: pointer;
+    height: 22px;
+    outline: none;
+}
+
+.modalToggleBtn + .modalToggleBtn {
+    border-left: 1px solid var(--truck-border-filter);
+}
+
+.toggleActive {
+    background: linear-gradient(to bottom, #01a5ec 0%, #0191ce 50%, #007db0 100%);
+    color: #ffffff;
+}
+
+.toggleInactive {
+    background-color: #f0f0f0;
+    color: var(--truck-color-muted);
+}
+
+.shipmentTypeBox {
+    min-width: 120px;
+}
+
+.shipmentSelect {
+    height: 22px;
+    font-size: var(--truck-font-size-sm);
+    font-family: var(--truck-font-family);
+    border: 1px solid var(--truck-border-filter);
+    border-radius: 0;
+    padding: 0 4px;
+    background-color: var(--truck-bg-input);
+    outline: none;
+    width: 100%;
+    cursor: pointer;
+    color: var(--truck-color-text);
+}
+
+.accessorialsButtons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.accessorialBtn {
+    height: 22px;
+    padding: 0 8px;
+    font-size: var(--truck-font-size-sm);
+    font-family: var(--truck-font-family);
+    border: 1px solid var(--truck-border-filter);
+    background-color: var(--truck-bg-input);
+    color: var(--truck-color-text);
+    cursor: pointer;
+    border-radius: 2px;
+    outline: none;
+}
+
+.accessorialBtnActive {
+    background: linear-gradient(to bottom, #01a5ec 0%, #0191ce 50%, #007db0 100%);
+    color: #ffffff;
+    border-color: #0078a8;
+}
+
+.accessorialBtnDisplay {
+    height: 24px !important;
+    padding: 0 8px !important;
+    font-size: 12px !important;
+    font-family: var(--truck-font-family) !important;
+    border: 1px solid #cccccc !important;
+    border-radius: 4px !important;
+    background: linear-gradient(to bottom, #fff 4%, #e2e2e2 100%) !important;
+    color: #333 !important;
+    text-transform: none !important;
+    box-shadow: none !important;
+    cursor: default !important;
+    pointer-events: none !important;
+}
+
+.altGatewayRow {
+    display: flex;
+    gap: 16px;
+    align-items: flex-end;
+    padding: 6px 12px 8px;
+    border-top: 1px solid var(--truck-border);
+    background-color: var(--truck-bg-header);
+}
+
+.altGatewaySelect {
+    height: 22px;
+    font-size: var(--truck-font-size-sm);
+    font-family: var(--truck-font-family);
+    border: 1px solid var(--truck-border-filter);
+    border-radius: 0;
+    padding: 0 4px;
+    background-color: var(--truck-bg-input);
+    outline: none;
+    min-width: 200px;
+    cursor: pointer;
+    color: var(--truck-color-text);
+}
+
+.altGatewayZipInput {
+    height: 22px;
+    width: 120px;
+    border: 1px solid var(--truck-border-filter);
+    font-size: var(--truck-font-size-sm);
+    font-family: var(--truck-font-family);
+    padding: 0 6px;
+    box-sizing: border-box;
+    outline: none;
+    color: var(--truck-color-text);
+    background-color: var(--truck-bg-input);
+}
+
+.altGatewayPanelFields {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.altGatewayInlineRow {
+    display: flex;
+    gap: 12px;
+    align-items: flex-end;
+}
+
+.ratesTable {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    border: 1px solid var(--truck-border);
+    border-top: none;
+}
+
+.modalTh {
+    font-size: var(--truck-font-size-sm);
+    font-weight: 600;
+    color: var(--truck-color-text);
+    text-align: left;
+    padding: 10px 6px;
+    border: 1px solid var(--truck-border);
+    background-color: #f5f5f5;
+    font-family: var(--truck-font-family);
+    white-space: nowrap;
+}
+
+.thSort {
+    font-size: var(--truck-font-size-sm);
+    font-weight: 600;
+    color: var(--truck-color-text);
+    text-align: left;
+    padding: 4px 6px;
+    border: 1px solid var(--truck-border);
+    background-color: #efefef;
+    font-family: var(--truck-font-family);
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+}
+
+.thSort:hover {
+    background-color: #e2e2e2;
+}
+
+.sortIconInactive {
+    color: #aaaaaa;
+    font-size: 11px;
+    margin-left: 2px;
+}
+
+.sortIconActive {
+    color: var(--truck-color-focus);
+    font-size: 11px;
+    font-weight: 700;
+    margin-left: 2px;
+}
+
+.rateRowEven {
+    background-color: #ffffff;
+}
+
+.rateRowOdd {
+    background-color: #f4f9fd;
+}
+
+.modalTd {
+    font-size: var(--truck-font-size-sm);
+    color: var(--truck-color-text);
+    padding: 4px 6px;
+    border: 1px solid var(--truck-border-cell);
+    font-family: var(--truck-font-family);
+    vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.tdCenter {
+    font-size: var(--truck-font-size-sm);
+    padding: 3px 4px;
+    border: 1px solid var(--truck-border-cell);
+    text-align: center;
+    vertical-align: middle;
+}
+
+.infoBtn {
+    background: none;
+    border: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.infoBtn:hover {
+    background-color: #e9f6fe;
+}
+
+.infoBtnIcon {
+    width: 20px;
+    height: 21px;
+    margin-left: 0;
+    -webkit-appearance: none;
+    border: 0;
+}
+
+.chargeBreakdownCell {
+    padding: 2px 2px;
+    border: 1px solid var(--truck-border-cell);
+}
+
+.noCharges {
+    font-size: var(--truck-font-size-sm);
+    color: #888888;
+    font-family: var(--truck-font-family);
+}
+
+.chargeTable {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    font-size: 11px;
+    font-family: var(--truck-font-family);
+}
+
+.chTh {
+    font-weight: 600;
+    color: var(--truck-color-text);
+    padding: 3px 8px;
+    background-color: #ffffcc;
+    border: 1px solid #e6e6a0;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.chThNum {
+    font-weight: 600;
+    color: var(--truck-color-text);
+    padding: 3px 8px;
+    background-color: #ffffcc;
+    border: 1px solid #e6e6a0;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.chTd {
+    color: var(--truck-color-muted);
+    padding: 3px 8px;
+    border: 1px solid #e0e0e0;
+    white-space: nowrap;
+}
+
+.chTdNum {
+    color: var(--truck-color-muted);
+    padding: 3px 8px;
+    border: 1px solid #e0e0e0;
+    white-space: nowrap;
+    text-align: right;
+}
+
+.chRowEven {
+    background-color: #ffffff;
+}
+
+.chRowOdd {
+    background-color: var(--truck-bg-row);
+}
+
+.notesTd {
+    font-style: italic;
+    color: var(--truck-color-muted);
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    max-width: 0;
+}
+
+.noRecords {
+    text-align: center;
+    padding: 14px;
+    color: var(--truck-color-subtle);
+    font-size: var(--truck-font-size-sm);
+    font-family: var(--truck-font-family);
+    border: 1px solid var(--truck-border);
+}
+
+.loadMoreRow {
+    display: flex;
+    justify-content: center;
+    padding: 6px 0;
+    border: 1px solid var(--truck-border);
+    border-top: none;
+    background-color: #fafafa;
+}
+
+.loadMoreBtn {
+    background: none;
+    border: 1px solid var(--truck-color-focus);
+    color: var(--truck-color-focus);
+    font-size: var(--truck-font-size-sm);
+    font-family: var(--truck-font-family);
+    cursor: pointer;
+    padding: 3px 18px;
+    border-radius: 2px;
+}
+
+.loadMoreBtn:hover {
+    background-color: #e9f6fe;
+}
+
+.loadingRow {
+    text-align: center;
+    padding: 18px;
+    color: var(--truck-color-subtle);
+    font-size: var(--truck-font-size-sm);
+    font-family: var(--truck-font-family);
+    border: 1px solid var(--truck-border);
+    border-top: none;
+    background-color: #fafafa;
+}
+
+.accordionContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.pickupItemSpacing {
+    margin-top: 4px;
+}
+
+.sectionHeaderBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 26px;
+    min-width: 0;
+    border-radius: 5px 5px 0 0;
+}
+
+.sectionHeaderBarExpanded {
+    background-color: #0097d6;
+    border: none;
+}
+
+.sectionHeaderBarCollapsed {
+    background-color: #ffffff;
+    border: 1px solid var(--truck-border);
+}
+
+.pickupHeaderLeft {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding-left: 6px;
+    font-weight: 600;
+    font-size: 13px;
+    font-family: var(--truck-font-family);
+    overflow: hidden;
+    min-width: 0;
+    flex: 1;
+}
+
+.pickupHeaderLeftExpanded {
+    color: #ffffff;
+}
+
+.pickupHeaderLeftCollapsed {
+    color: var(--truck-color-focus);
+}
+
+.headerLabelText {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 0;
+}
+
+.pendingBadge {
+    background-color: yellow;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 0 5px;
+    border-radius: 2px;
+    line-height: 18px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.headerControls {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding-right: 4px;
+    flex-shrink: 0;
+}
+
+.collapseToggle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 30px;
+}
+
+.collapseToggleExpanded {
+    border-left: 1px solid #ffffff;
+}
+
+.collapseToggleCollapsed {
+    border-left: 1px solid var(--truck-border);
+}
+
+.toggleImg {
+    width: 15px;
+    height: 15px;
+    margin: 4px;
+    display: block;
+}
+
+.pickupContentHidden {
+    display: none;
+}
+
+.doorDeliveryHeaderLabel {
+    padding-left: 6px;
+    font-weight: 600;
+    font-size: 13px;
+    font-family: var(--truck-font-family);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 1;
+}
+
+.doorDeliveryHeaderLabelExpanded {
+    color: #ffffff;
+}
+
+.doorDeliveryHeaderLabelCollapsed {
+    color: var(--truck-color-focus);
+}
+
+.doorDeliveryCollapseToggle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 30px;
+    padding-right: 4px;
+}
+
+.doorDeliveryWrapperSpaced {
+    margin-top: 4px;
+}
+
+.doorDeliveryContentHidden {
+    display: none;
+}
+
+.doorDeliveryContentCombined {
+    background-color: #ffffff;
+    border: 1px solid var(--truck-border);
+}
+
+.pickupActionBtn {
+    min-width: 0 !important;
+    height: 18px !important;
+    border-radius: 2px !important;
+}
+
+.cargoRowWrapper {
+    margin-bottom: 4px;
+}
+
+.cargoMainRow {
+    display: flex;
+    gap: 8px;
+    align-items: flex-start;
+    margin-bottom: 4px;
+}
+
+.cargoDescCol {
+    display: flex;
+    flex-direction: column;
+    min-width: 280px;
+}
+
+.cargoFieldsCol {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.cargoNumFieldsRow {
+    display: flex;
+    gap: 6px;
+    align-items: flex-end;
+}
+
+.cargoNumFieldBox {
+    display: flex;
+    flex-direction: column;
+    width: 140px;
+}
+
+.cargoSelectsRow {
+    display: flex;
+    gap: 6px;
+    align-items: flex-end;
+}
+
+.cargoPackagingBox {
+    display: flex;
+    flex-direction: column;
+    width: 140px;
+}
+
+.cargoHazardousBox {
+    display: flex;
+    flex-direction: column;
+    width: 140px;
+}
+
+.cargoToggleBox {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 6px;
+}
+
+.cargoFieldLabel {
+    display: block;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    margin-bottom: 2px;
+    white-space: nowrap;
+}
+
+.cargoSelectField :global(.MuiOutlinedInput-root) {
+    height: 22px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 0;
+    background-color: #fff;
+}
+
+.cargoSelectField :global(.MuiOutlinedInput-root fieldset) {
+    border-color: #000 !important;
+    border-width: 1px !important;
+    border-radius: 0;
+}
+
+.cargoSelectField :global(.MuiSelect-select) {
+    padding: 0 6px !important;
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+}
+
+.cargoSelectField :global(.MuiSvgIcon-root) {
+    color: #000;
+}
+
+.cargoNumField :global(.MuiOutlinedInput-root) {
+    height: 22px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 0;
+    /* border-color: #c0392b; */
+}
+
+.cargoNumField :global(.MuiOutlinedInput-root fieldset) {
+    /* border-color: #c0392b !important; */
+    border-width: 1px !important;
+    border-radius: 0;
+}
+
+.cargoNumField :global(.MuiOutlinedInput-root input) {
+    padding: 0 4px;
+    height: 22px;
+    box-sizing: border-box;
+}
+
+.cargoTextAreaField :global(.MuiOutlinedInput-root) {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 0;
+    background-color: #fff;
+    align-items: flex-start;
+    padding: 0 !important;
+    height: 100%;
+}
+
+.cargoTextAreaField :global(.MuiInputBase-root) {
+    padding: 0 !important;
+}
+
+.cargoTextAreaField :global(.MuiOutlinedInput-root) textarea {
+    padding: 4px 6px;
+    overflow: auto !important;
+    resize: none;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.cargoTextAreaField :global(.MuiOutlinedInput-root fieldset) {
+    border-color: #000 !important;
+    border-width: 1px !important;
+    border-radius: 0;
+}
+
+.cargoNumField :global(.MuiInputBase-root) {
+    padding: 0 !important;
+}
+
+.cargoSelectField :global(.MuiInputBase-root) {
+    padding: 0 !important;
+}
+
+.cargoNumFieldBox input[type="number"]::-webkit-outer-spin-button,
+.cargoNumFieldBox input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.cargoNumFieldBox input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+
+.headerBtn {
+    background: linear-gradient(to bottom, #aba8a8 -11%, #000000 100%);
+    color: #ffffff;
+    border: none;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    height: 28px;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 28px;
+    padding: 0 16px;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.headerBtn:hover {
+    background: linear-gradient(to bottom, #c8c5c5 -11%, #222222 100%);
+}
+
+.refreshLoading {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.refreshLoadingText {
+    color: #ffffff;
+    font-size: var(--truck-font-size-sm);
+    font-family: var(--truck-font-family);
+}
+
+.muiToggleGroup {
+    display: flex;
+    border: 1px solid var(--truck-border-filter);
+    border-radius: 3px;
+    overflow: hidden;
+    width: fit-content;
+    height: 24px;
+}
+
+.muiToggleBtn {
+    padding: 0 10px !important;
+    height: 24px !important;
+    font-size: var(--truck-font-size-sm) !important;
+    font-family: var(--truck-font-family) !important;
+    min-width: unset !important;
+    text-transform: none !important;
+    border-radius: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    line-height: 1 !important;
+}
+
+.muiToggleBtnActive {
+    background: linear-gradient(to bottom, #0078d7 0%, #0060a3 100%) !important;
+    color: #ffffff !important;
+}
+
+.muiToggleBtnInactive {
+    background: #e8e8e8 !important;
+    color: #555555 !important;
+}
+
+.locationFieldsGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.locationLabelsRow {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4px;
+    margin-bottom: 2px;
+}
+
+.locationInputsRow {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4px;
+}
+
+.locationZipInput {
+    min-width: 0;
+}
+
+.thSortInner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+}
+
+.sortIndicator {
+    color: #aaaaaa;
+    font-size: 10px;
+    flex-shrink: 0;
+}
+
+.sortIndicatorActive {
+    color: var(--truck-color-focus);
+    font-size: 10px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.sortIconImg {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.amtTd {
+    font-size: var(--truck-font-size-sm);
+    color: var(--truck-color-text);
+    padding: 4px 6px;
+    border: 1px solid var(--truck-border-cell);
+    font-family: var(--truck-font-family);
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.amtInner {
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+}
+
+.amtCurrency {
+    color: var(--truck-color-muted);
+    font-size: var(--truck-font-size-sm);
+    font-family: var(--truck-font-family);
+}
+
+.trkSelectBtn {
+    background: linear-gradient(to bottom, #aba8a8 -11%, #000000 100%);
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    padding: 0 16px;
+    height: 22px;
+    line-height: 23px;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    width: 50%;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    outline: none;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.trkSelectBtnSelected {
+    background: linear-gradient(to bottom, #22aa55 0%, #178840 100%) !important;
+    border-color: #0f6630 !important;
+    color: #ffffff !important;
+}
+
+.trkStatusWrapper {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.trkStatusBadge {
+    display: inline-block;
+    font-size: 11px;
+    font-family: var(--truck-font-family, Arial, Helvetica, sans-serif);
+    font-weight: 600;
+    padding: 2px 10px;
+    border-radius: 3px;
+    line-height: 18px;
+    white-space: nowrap;
+}
+
+.trkStatusPending {
+    composes: trkStatusBadge;
+    background-color: #ff0;
+    color: #000;
+}
+
+.trkStatusSuccess {
+    composes: trkStatusBadge;
+    background-color: #66c602;
+    color: #fff;
+}
+
+.trkStatusFailure {
+    composes: trkStatusBadge;
+    background-color: #d70000;
+    color: #fff;
+}
+
+.trkHeaderBadge {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    padding-top: 6px;
+    padding-right: 5px;
+    margin-top: -1px;
+    margin-bottom: 2px;
+    margin-right: 10px;
+    padding-left: 3px;
+    flex-shrink: 0;
+}
+
+.trkHeaderPending {
+    composes: trkHeaderBadge;
+    background-color: #ff0;
+    color: #000;
+}
+
+.trkHeaderSuccess {
+    composes: trkHeaderBadge;
+    background-color: #66c602;
+    color: #fff;
+}
+
+.trkHeaderFailure {
+    composes: trkHeaderBadge;
+    background-color: #d70000;
+    color: #fff;
+}
