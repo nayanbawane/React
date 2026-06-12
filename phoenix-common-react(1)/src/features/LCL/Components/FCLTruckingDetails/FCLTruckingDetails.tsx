@@ -123,8 +123,8 @@ const truckingDetails = ({
                 />
               </Box>
 
-                {/* Helicore*/}
-                {/* Helicore*/}
+                {/* TCS*/}
+                {/* Infy*/}
                 {/* Helicore*/}
 
               <Box className={styles.contactInfoGrid}>
