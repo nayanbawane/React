@@ -123,7 +123,9 @@ const truckingDetails = ({
                 />
               </Box>
 
-                {/* Nayan Java Developer Helicore*/}
+                {/* Helicore*/}
+                {/* Helicore*/}
+                {/* Helicore*/}
 
               <Box className={styles.contactInfoGrid}>
                 <Box>
