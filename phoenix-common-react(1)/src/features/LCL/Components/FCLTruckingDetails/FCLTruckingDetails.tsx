@@ -123,16 +123,6 @@ const truckingDetails = ({
                 />
               </Box>
 
-              {/* Trucking Details - Pick Up Section Nayan Bawane Changes  */}
-              {/* <Box
-                sx={{
-                  display: 'grid',
-                  gridTemplateColumns: '1fr 1fr',
-                  gap: '10px',
-                  marginTop: '2px',
-                }}
-              > */}
-
               <Box className={styles.contactInfoGrid}>
                 <Box>
                   <PTextField
